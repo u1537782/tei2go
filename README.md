@@ -1,15 +1,24 @@
 # Temporal Expression Identification to Go
 
-Temporal Expression Identification to Go (TEI2GO) is an approach for fast and effective identification of temporal expressions.
+This branch serves to present/reproduce the results presented in the paper "TEI2GO: A Multilingual Methodology for Fast Temporal
+Expression Identification" which was submitted to ECIR'23. 
 
-> **_NOTE:_** TEI2GO was submitted to ECIR'23. To ensure the reproducibility of the results presented in the manuscript
-> we created the branch `paper` which contains the script to reproduce the presented models along with the logs that the
-> training process produced. Furthermore, the README of that branch also contains information that complements the 
-> original manuscript. Therefore, we encourage our most interested readers to `git checkout paper` in order to attain a  
-> hands-on understanding of the approach. 
+The directory is structured as follows:
+```shell
+├── logs  "Contain the logs produced by running the training process."
+│     
+├── models
+│   └── download.sh  "A shell script that will download the models presente don the manuscript."
+│     
+├── reproduce.sh  "A shell script to reproduce the models to replicate the training process that we done at the time."
+│            
+├── resources
+│   └── download.sh  "A shell script to download the necessary resources."
+│            
+├── result  "The metrics of the models on the test set of each corpus in each language."
+```
 
-## Development environment
-
+## Setup environment and directory.
 ```shell
 virtualenv venv --python=python3.8
 source venv/bin/activate
@@ -24,22 +33,23 @@ the following command.
 sudo chmod 111 venv/lib/python3.8/site-packages/py_heideltime/Heideltime/TreeTaggerLinux/bin/*
 ```
 
-## Train
+## How to...
+
+### reproduce the training process?
+In short, the training process can be reproduced by running the following line:
+```shell
+sh reproduce.sh
+```
+The more elaborated answered would be 
+
+
+### evaluate the models?
 
 ```shell
-python run.py --data "tempeval_2_italian" --language "it" --model "spacy" --n_epochs 5 --dropout 0.1
+sh models/download.sh
+python -m src.evaluate
 ```
 
-### Download Pre-Trained Models
+While the first line of the script above will download the models that were presented in the manuscript, the second line
+will produce the results that are presented in the folder `results`.   
 
-```shell
-cd models
-sh download.sh
-```
-
-### Download Resources
-
-```shell
-cd resources
-sh download.sh
-```
