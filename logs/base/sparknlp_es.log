@@ -1,0 +1,2410 @@
+[2022-10-02 22:07:41,283] ----------------------------------------------------------------------------------------------------
+[2022-10-02 22:07:41,283] Start training for the following setup:
+[2022-10-02 22:07:41,283] 	model: sparknlp
+[2022-10-02 22:07:41,283] 	data: ['spanish_timebank']
+[2022-10-02 22:07:41,283] 	language: es
+[2022-10-02 22:07:41,283] 	n_epochs: 15
+[2022-10-02 22:07:41,283] 	dropout: 0.2
+[2022-10-02 22:07:41,283] 	batch_size: 64
+[2022-10-02 22:07:41,283] 	learning_rate: 0.1
+[2022-10-02 22:07:41,283] 	embeddings: glove_840B_300_xx
+[2022-10-02 22:07:41,283] 	models_path: /home/hugosousa/Projects/tei2go/models
+[2022-10-02 22:07:41,284] 	resources_path: /home/hugosousa/Projects/tei2go/resources
+[2022-10-02 22:07:41,284] 	logs_path: /home/hugosousa/Projects/tei2go/logs
+[2022-10-02 22:07:41,284] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-02 22:07:41,284] 	gpu: False
+[2022-10-02 22:07:41,284] Found preprocessed data.
+[2022-10-02 22:07:41,284] Starting spark session with GPU set to False.
+[2022-10-02 22:07:57,797] Initializing model for language es.
+[2022-10-02 22:07:57,797] Started train loop with id 20221002220757
+[2022-10-02 22:07:57,797] Building training pipeline.
+[2022-10-02 22:08:36,585] Initialize training.
+[2022-10-02 22:20:48,633] Train done.
+[2022-10-02 22:20:48,633] Storing NER weights.
+[2022-10-02 22:20:49,998] Retrieving metrics from sparknlp log file. 
+Notice that this metrics are computed on the BIO annotation and not on the tag identification level.
+[2022-10-02 22:20:49,999] Name of the selected graph: ner-dl/blstm_10_300_128_120.pb
+Training started - total epochs: 15 - lr: 0.1 - batch size: 64 - labels: 3 - chars: 92 - training examples: 602
+
+
+Epoch 1/15 started, lr: 0.1, dataset size: 602
+
+
+Epoch 1/15 - 32,57s - loss: 1993.2323 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 21,69s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 285	 0.0	 0.0	 0.0
+B-TIMEX	 19	 17	 212	 0.5277778	 0.08225108	 0.1423221
+tp: 19 fp: 17 fn: 497 labels: 2
+Macro-average	 prec: 0.2638889, rec: 0.04112554, f1: 0.07116105
+Micro-average	 prec: 0.5277778, rec: 0.036821704, f1: 0.06884057
+
+
+Epoch 2/15 started, lr: 0.09950249, dataset size: 602
+
+
+Epoch 2/15 - 26,02s - loss: 543.23846 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 21,19s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 17	 20	 268	 0.45945945	 0.05964912	 0.10559005
+B-TIMEX	 0	 0	 231	 0.0	 0.0	 0.0
+tp: 17 fp: 20 fn: 499 labels: 2
+Macro-average	 prec: 0.22972973, rec: 0.02982456, f1: 0.052795026
+Micro-average	 prec: 0.45945945, rec: 0.032945737, f1: 0.061482824
+
+
+Epoch 3/15 started, lr: 0.0990099, dataset size: 602
+
+
+Epoch 3/15 - 25,95s - loss: 376.00433 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 21,00s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 12	 16	 273	 0.42857143	 0.042105265	 0.07667732
+B-TIMEX	 5	 28	 226	 0.15151516	 0.021645023	 0.03787879
+tp: 17 fp: 44 fn: 499 labels: 2
+Macro-average	 prec: 0.2900433, rec: 0.031875145, f1: 0.05743798
+Micro-average	 prec: 0.27868852, rec: 0.032945737, f1: 0.058925483
+
+
+Epoch 4/15 started, lr: 0.09852217, dataset size: 602
+
+
+Epoch 4/15 - 25,69s - loss: 420.6036 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 21,04s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 9	 15	 276	 0.375	 0.031578947	 0.058252428
+B-TIMEX	 0	 0	 231	 0.0	 0.0	 0.0
+tp: 9 fp: 15 fn: 507 labels: 2
+Macro-average	 prec: 0.1875, rec: 0.015789473, f1: 0.029126214
+Micro-average	 prec: 0.375, rec: 0.017441861, f1: 0.033333335
+
+
+Epoch 5/15 started, lr: 0.09803922, dataset size: 602
+
+
+Epoch 5/15 - 25,66s - loss: 445.007 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 21,13s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 285	 0.0	 0.0	 0.0
+B-TIMEX	 14	 9	 217	 0.6086956	 0.060606062	 0.11023622
+tp: 14 fp: 9 fn: 502 labels: 2
+Macro-average	 prec: 0.3043478, rec: 0.030303031, f1: 0.05511811
+Micro-average	 prec: 0.6086956, rec: 0.027131783, f1: 0.051948052
+
+
+Epoch 6/15 started, lr: 0.09756098, dataset size: 602
+
+
+Epoch 6/15 - 25,95s - loss: 347.3639 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 20,76s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 1	 9	 284	 0.1	 0.003508772	 0.0067796614
+B-TIMEX	 13	 9	 218	 0.59090906	 0.056277055	 0.102766804
+tp: 14 fp: 18 fn: 502 labels: 2
+Macro-average	 prec: 0.34545454, rec: 0.029892914, f1: 0.05502444
+Micro-average	 prec: 0.4375, rec: 0.027131783, f1: 0.05109489
+
+
+Epoch 7/15 started, lr: 0.09708738, dataset size: 602
+
+
+Epoch 7/15 - 25,37s - loss: 257.737 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 20,74s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 285	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 231	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 516 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 8/15 started, lr: 0.09661836, dataset size: 602
+
+
+Epoch 8/15 - 25,36s - loss: 233.00845 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 20,68s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 285	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 231	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 516 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 9/15 started, lr: 0.09615385, dataset size: 602
+
+
+Epoch 9/15 - 25,36s - loss: 204.81448 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 20,67s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 285	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 231	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 516 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 10/15 started, lr: 0.09569378, dataset size: 602
+
+
+Epoch 10/15 - 25,26s - loss: 229.6778 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 20,67s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 285	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 231	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 516 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 11/15 started, lr: 0.095238104, dataset size: 602
+
+
+Epoch 11/15 - 25,30s - loss: 186.48401 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 20,59s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 285	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 231	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 516 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 12/15 started, lr: 0.09478673, dataset size: 602
+
+
+Epoch 12/15 - 25,25s - loss: 181.16435 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 20,60s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 285	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 231	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 516 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 13/15 started, lr: 0.09433963, dataset size: 602
+
+
+Epoch 13/15 - 25,27s - loss: 195.6768 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 20,69s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 285	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 231	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 516 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 14/15 started, lr: 0.09389671, dataset size: 602
+
+
+Epoch 14/15 - 25,21s - loss: 218.90547 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 20,57s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 285	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 231	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 516 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 15/15 started, lr: 0.09345794, dataset size: 602
+
+
+Epoch 15/15 - 25,18s - loss: 198.91417 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 120
+time to finish evaluation: 20,56s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 285	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 231	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 516 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+[2022-10-02 22:20:49,999] Training done.
+[2022-10-02 22:20:49,999] Best validation f1: 0.0688
+[2022-10-02 22:20:50,000] ----------------------------------------------------------------------------------------------------
+[2022-10-02 22:20:55,092] ----------------------------------------------------------------------------------------------------
+[2022-10-02 22:20:55,092] Start training for the following setup:
+[2022-10-02 22:20:55,092] 	model: sparknlp
+[2022-10-02 22:20:55,092] 	data: ['spanish_timebank']
+[2022-10-02 22:20:55,092] 	language: es
+[2022-10-02 22:20:55,092] 	n_epochs: 15
+[2022-10-02 22:20:55,092] 	dropout: 0.3
+[2022-10-02 22:20:55,092] 	batch_size: 8
+[2022-10-02 22:20:55,092] 	learning_rate: 0.003
+[2022-10-02 22:20:55,092] 	embeddings: glove_840B_300_xx
+[2022-10-02 22:20:55,092] 	models_path: /home/hugosousa/Projects/tei2go/models
+[2022-10-02 22:20:55,092] 	resources_path: /home/hugosousa/Projects/tei2go/resources
+[2022-10-02 22:20:55,092] 	logs_path: /home/hugosousa/Projects/tei2go/logs
+[2022-10-02 22:20:55,092] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-02 22:20:55,092] 	gpu: False
+[2022-10-02 22:20:55,092] Found preprocessed data.
+[2022-10-02 22:20:55,092] Starting spark session with GPU set to False.
+[2022-10-02 22:21:07,659] Initializing model for language es.
+[2022-10-02 22:21:07,659] Started train loop with id 20221002222107
+[2022-10-02 22:21:07,659] Building training pipeline.
+[2022-10-02 22:21:35,355] Initialize training.
+[2022-10-02 22:33:54,733] Train done.
+[2022-10-02 22:33:54,734] Storing NER weights.
+[2022-10-02 22:33:56,037] Retrieving metrics from sparknlp log file. 
+Notice that this metrics are computed on the BIO annotation and not on the tag identification level.
+[2022-10-02 22:33:56,038] Name of the selected graph: ner-dl/blstm_10_300_128_120.pb
+Training started - total epochs: 15 - lr: 0.003 - batch size: 8 - labels: 3 - chars: 91 - training examples: 609
+
+
+Epoch 1/15 started, lr: 0.003, dataset size: 609
+
+
+Epoch 1/15 - 29,12s - loss: 962.8744 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 21,27s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 203	 56	 61	 0.7837838	 0.7689394	 0.77629066
+B-TIMEX	 84	 17	 118	 0.83168316	 0.41584158	 0.55445546
+tp: 287 fp: 73 fn: 179 labels: 2
+Macro-average	 prec: 0.8077335, rec: 0.5923905, f1: 0.68350184
+Micro-average	 prec: 0.7972222, rec: 0.61587983, f1: 0.69491524
+
+
+Epoch 2/15 started, lr: 0.0029850747, dataset size: 609
+
+
+Epoch 2/15 - 27,24s - loss: 373.52057 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,52s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 210	 17	 54	 0.92511016	 0.79545456	 0.85539716
+B-TIMEX	 129	 18	 73	 0.877551	 0.6386139	 0.7392551
+tp: 339 fp: 35 fn: 127 labels: 2
+Macro-average	 prec: 0.9013306, rec: 0.7170342, f1: 0.79868877
+Micro-average	 prec: 0.90641713, rec: 0.72746783, f1: 0.8071429
+
+
+Epoch 3/15 started, lr: 0.0029702971, dataset size: 609
+
+
+Epoch 3/15 - 26,94s - loss: 283.70447 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,42s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 218	 16	 46	 0.93162394	 0.82575756	 0.87550205
+B-TIMEX	 152	 20	 50	 0.88372093	 0.75247526	 0.81283426
+tp: 370 fp: 36 fn: 96 labels: 2
+Macro-average	 prec: 0.9076724, rec: 0.7891164, f1: 0.8442526
+Micro-average	 prec: 0.91133004, rec: 0.7939914, f1: 0.8486239
+
+
+Epoch 4/15 started, lr: 0.002955665, dataset size: 609
+
+
+Epoch 4/15 - 26,74s - loss: 213.82202 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,33s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 232	 28	 32	 0.8923077	 0.8787879	 0.8854962
+B-TIMEX	 162	 25	 40	 0.8663102	 0.8019802	 0.8329049
+tp: 394 fp: 53 fn: 72 labels: 2
+Macro-average	 prec: 0.87930894, rec: 0.840384, f1: 0.85940593
+Micro-average	 prec: 0.88143176, rec: 0.84549356, f1: 0.86308867
+
+
+Epoch 5/15 started, lr: 0.0029411765, dataset size: 609
+
+
+Epoch 5/15 - 26,72s - loss: 180.47707 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,44s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 239	 30	 25	 0.88847584	 0.905303	 0.8968105
+B-TIMEX	 162	 21	 40	 0.8852459	 0.8019802	 0.84155846
+tp: 401 fp: 51 fn: 65 labels: 2
+Macro-average	 prec: 0.88686085, rec: 0.8536416, f1: 0.86993426
+Micro-average	 prec: 0.88716817, rec: 0.860515, f1: 0.8736384
+
+
+Epoch 6/15 started, lr: 0.0029268293, dataset size: 609
+
+
+Epoch 6/15 - 26,63s - loss: 164.44664 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,17s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 238	 28	 26	 0.8947368	 0.9015151	 0.8981132
+B-TIMEX	 162	 20	 40	 0.8901099	 0.8019802	 0.84375
+tp: 400 fp: 48 fn: 66 labels: 2
+Macro-average	 prec: 0.8924234, rec: 0.85174763, f1: 0.8716112
+Micro-average	 prec: 0.89285713, rec: 0.8583691, f1: 0.8752736
+
+
+Epoch 7/15 started, lr: 0.0029126215, dataset size: 609
+
+
+Epoch 7/15 - 26,64s - loss: 149.76569 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,18s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 237	 26	 27	 0.9011407	 0.89772725	 0.89943075
+B-TIMEX	 170	 21	 32	 0.8900524	 0.84158415	 0.86513996
+tp: 407 fp: 47 fn: 59 labels: 2
+Macro-average	 prec: 0.8955965, rec: 0.8696557, f1: 0.8824355
+Micro-average	 prec: 0.8964758, rec: 0.87339056, f1: 0.8847826
+
+
+Epoch 8/15 started, lr: 0.0028985508, dataset size: 609
+
+
+Epoch 8/15 - 26,51s - loss: 123.906166 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,16s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 240	 25	 24	 0.9056604	 0.90909094	 0.9073724
+B-TIMEX	 171	 21	 31	 0.890625	 0.84653467	 0.8680203
+tp: 411 fp: 46 fn: 55 labels: 2
+Macro-average	 prec: 0.8981427, rec: 0.8778128, f1: 0.88786143
+Micro-average	 prec: 0.89934355, rec: 0.8819742, f1: 0.8905742
+
+
+Epoch 9/15 started, lr: 0.0028846154, dataset size: 609
+
+
+Epoch 9/15 - 27,14s - loss: 117.89555 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,02s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 243	 34	 21	 0.87725633	 0.92045456	 0.89833647
+B-TIMEX	 171	 18	 31	 0.9047619	 0.84653467	 0.8746804
+tp: 414 fp: 52 fn: 52 labels: 2
+Macro-average	 prec: 0.8910091, rec: 0.8834946, f1: 0.887236
+Micro-average	 prec: 0.888412, rec: 0.888412, f1: 0.888412
+
+
+Epoch 10/15 started, lr: 0.0028708135, dataset size: 609
+
+
+Epoch 10/15 - 26,37s - loss: 109.86772 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,05s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 238	 22	 26	 0.9153846	 0.9015151	 0.9083969
+B-TIMEX	 173	 15	 29	 0.92021275	 0.85643566	 0.88717943
+tp: 411 fp: 37 fn: 55 labels: 2
+Macro-average	 prec: 0.91779864, rec: 0.8789754, f1: 0.8979676
+Micro-average	 prec: 0.91741073, rec: 0.8819742, f1: 0.89934355
+
+
+Epoch 11/15 started, lr: 0.002857143, dataset size: 609
+
+
+Epoch 11/15 - 26,32s - loss: 102.018974 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,14s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 239	 20	 25	 0.9227799	 0.905303	 0.91395795
+B-TIMEX	 173	 17	 29	 0.91052634	 0.85643566	 0.88265306
+tp: 412 fp: 37 fn: 54 labels: 2
+Macro-average	 prec: 0.91665316, rec: 0.8808693, f1: 0.8984051
+Micro-average	 prec: 0.9175947, rec: 0.88412017, f1: 0.90054643
+
+
+Epoch 12/15 started, lr: 0.002843602, dataset size: 609
+
+
+Epoch 12/15 - 26,49s - loss: 98.372 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,04s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 245	 40	 19	 0.8596491	 0.9280303	 0.8925319
+B-TIMEX	 169	 25	 33	 0.87113404	 0.8366337	 0.85353535
+tp: 414 fp: 65 fn: 52 labels: 2
+Macro-average	 prec: 0.8653916, rec: 0.88233197, f1: 0.8737797
+Micro-average	 prec: 0.8643006, rec: 0.888412, f1: 0.8761905
+
+
+Epoch 13/15 started, lr: 0.002830189, dataset size: 609
+
+
+Epoch 13/15 - 26,36s - loss: 95.484276 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 19,97s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 239	 22	 25	 0.91570884	 0.905303	 0.9104762
+B-TIMEX	 172	 19	 30	 0.90052354	 0.85148513	 0.87531805
+tp: 411 fp: 41 fn: 55 labels: 2
+Macro-average	 prec: 0.9081162, rec: 0.87839407, f1: 0.89300793
+Micro-average	 prec: 0.90929204, rec: 0.8819742, f1: 0.89542484
+
+
+Epoch 14/15 started, lr: 0.0028169013, dataset size: 609
+
+
+Epoch 14/15 - 26,30s - loss: 80.14802 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 19,99s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 241	 27	 23	 0.8992537	 0.9128788	 0.90601504
+B-TIMEX	 176	 16	 26	 0.9166667	 0.8712871	 0.893401
+tp: 417 fp: 43 fn: 49 labels: 2
+Macro-average	 prec: 0.9079602, rec: 0.8920829, f1: 0.8999516
+Micro-average	 prec: 0.90652174, rec: 0.8948498, f1: 0.90064794
+
+
+Epoch 15/15 started, lr: 0.0028037382, dataset size: 609
+
+
+Epoch 15/15 - 26,34s - loss: 78.391 - batches: 77
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 19,96s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 234	 23	 30	 0.91050583	 0.8863636	 0.8982725
+B-TIMEX	 173	 18	 29	 0.90575916	 0.85643566	 0.8804071
+tp: 407 fp: 41 fn: 59 labels: 2
+Macro-average	 prec: 0.9081325, rec: 0.87139964, f1: 0.8893869
+Micro-average	 prec: 0.90848213, rec: 0.87339056, f1: 0.8905908
+
+[2022-10-02 22:33:56,039] Training done.
+[2022-10-02 22:33:56,039] Best validation f1: 0.9006
+[2022-10-02 22:33:56,039] ----------------------------------------------------------------------------------------------------
+[2022-10-02 22:34:01,323] ----------------------------------------------------------------------------------------------------
+[2022-10-02 22:34:01,323] Start training for the following setup:
+[2022-10-02 22:34:01,323] 	model: sparknlp
+[2022-10-02 22:34:01,324] 	data: ['spanish_timebank']
+[2022-10-02 22:34:01,324] 	language: es
+[2022-10-02 22:34:01,324] 	n_epochs: 15
+[2022-10-02 22:34:01,324] 	dropout: 0.3
+[2022-10-02 22:34:01,324] 	batch_size: 64
+[2022-10-02 22:34:01,324] 	learning_rate: 0.03
+[2022-10-02 22:34:01,324] 	embeddings: glove_840B_300_xx
+[2022-10-02 22:34:01,324] 	models_path: /home/hugosousa/Projects/tei2go/models
+[2022-10-02 22:34:01,324] 	resources_path: /home/hugosousa/Projects/tei2go/resources
+[2022-10-02 22:34:01,324] 	logs_path: /home/hugosousa/Projects/tei2go/logs
+[2022-10-02 22:34:01,324] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-02 22:34:01,324] 	gpu: False
+[2022-10-02 22:34:01,324] Found preprocessed data.
+[2022-10-02 22:34:01,324] Starting spark session with GPU set to False.
+[2022-10-02 22:34:16,059] Initializing model for language es.
+[2022-10-02 22:34:16,059] Started train loop with id 20221002223416
+[2022-10-02 22:34:16,059] Building training pipeline.
+[2022-10-02 22:34:53,902] Initialize training.
+[2022-10-02 22:47:32,916] Train done.
+[2022-10-02 22:47:32,917] Storing NER weights.
+[2022-10-02 22:47:34,329] Retrieving metrics from sparknlp log file. 
+Notice that this metrics are computed on the BIO annotation and not on the tag identification level.
+[2022-10-02 22:47:34,331] Name of the selected graph: ner-dl/blstm_10_300_128_120.pb
+Training started - total epochs: 15 - lr: 0.03 - batch size: 64 - labels: 3 - chars: 90 - training examples: 598
+
+
+Epoch 1/15 started, lr: 0.03, dataset size: 598
+
+
+Epoch 1/15 - 30,33s - loss: 830.7507 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 22,62s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 119	 52	 159	 0.69590646	 0.42805755	 0.5300668
+B-TIMEX	 0	 0	 233	 0.0	 0.0	 0.0
+tp: 119 fp: 52 fn: 392 labels: 2
+Macro-average	 prec: 0.34795323, rec: 0.21402878, f1: 0.2650334
+Micro-average	 prec: 0.69590646, rec: 0.23287672, f1: 0.3489736
+
+
+Epoch 2/15 started, lr: 0.029850746, dataset size: 598
+
+
+Epoch 2/15 - 26,73s - loss: 294.54465 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 22,05s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 1	 1	 277	 0.5	 0.0035971224	 0.007142857
+B-TIMEX	 0	 0	 233	 0.0	 0.0	 0.0
+tp: 1 fp: 1 fn: 510 labels: 2
+Macro-average	 prec: 0.25, rec: 0.0017985612, f1: 0.0035714286
+Micro-average	 prec: 0.5, rec: 0.0019569471, f1: 0.0038986355
+
+
+Epoch 3/15 started, lr: 0.02970297, dataset size: 598
+
+
+Epoch 3/15 - 26,60s - loss: 150.97836 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 21,94s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 76	 47	 202	 0.6178862	 0.2733813	 0.37905237
+B-TIMEX	 0	 0	 233	 0.0	 0.0	 0.0
+tp: 76 fp: 47 fn: 435 labels: 2
+Macro-average	 prec: 0.3089431, rec: 0.13669065, f1: 0.18952619
+Micro-average	 prec: 0.6178862, rec: 0.14872798, f1: 0.23974763
+
+
+Epoch 4/15 started, lr: 0.02955665, dataset size: 598
+
+
+Epoch 4/15 - 26,25s - loss: 93.678856 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 21,81s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 176	 65	 102	 0.7302905	 0.63309354	 0.67822737
+B-TIMEX	 35	 22	 198	 0.61403507	 0.1502146	 0.24137932
+tp: 211 fp: 87 fn: 300 labels: 2
+Macro-average	 prec: 0.6721628, rec: 0.39165407, f1: 0.494926
+Micro-average	 prec: 0.7080537, rec: 0.41291586, f1: 0.52163166
+
+
+Epoch 5/15 started, lr: 0.029411765, dataset size: 598
+
+
+Epoch 5/15 - 26,32s - loss: 69.41454 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 21,96s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 217	 53	 61	 0.8037037	 0.7805755	 0.7919708
+B-TIMEX	 108	 40	 125	 0.7297297	 0.4635193	 0.56692916
+tp: 325 fp: 93 fn: 186 labels: 2
+Macro-average	 prec: 0.7667167, rec: 0.6220474, f1: 0.6868469
+Micro-average	 prec: 0.77751195, rec: 0.63600785, f1: 0.69967705
+
+
+Epoch 6/15 started, lr: 0.029268293, dataset size: 598
+
+
+Epoch 6/15 - 26,38s - loss: 58.31134 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 21,87s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 222	 87	 56	 0.7184466	 0.79856116	 0.75638837
+B-TIMEX	 117	 66	 116	 0.6393443	 0.50214595	 0.56250006
+tp: 339 fp: 153 fn: 172 labels: 2
+Macro-average	 prec: 0.6788955, rec: 0.65035355, f1: 0.6643181
+Micro-average	 prec: 0.6890244, rec: 0.66340506, f1: 0.6759721
+
+
+Epoch 7/15 started, lr: 0.029126214, dataset size: 598
+
+
+Epoch 7/15 - 26,79s - loss: 55.284138 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 21,65s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 220	 56	 58	 0.79710144	 0.79136693	 0.79422385
+B-TIMEX	 144	 42	 89	 0.7741935	 0.6180258	 0.6873508
+tp: 364 fp: 98 fn: 147 labels: 2
+Macro-average	 prec: 0.7856475, rec: 0.70469636, f1: 0.74297345
+Micro-average	 prec: 0.7878788, rec: 0.7123288, f1: 0.74820143
+
+
+Epoch 8/15 started, lr: 0.028985508, dataset size: 598
+
+
+Epoch 8/15 - 26,02s - loss: 58.430202 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 21,55s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 211	 51	 67	 0.8053435	 0.7589928	 0.7814815
+B-TIMEX	 98	 38	 135	 0.7205882	 0.42060086	 0.5311653
+tp: 309 fp: 89 fn: 202 labels: 2
+Macro-average	 prec: 0.76296586, rec: 0.58979684, f1: 0.66529757
+Micro-average	 prec: 0.7763819, rec: 0.6046967, f1: 0.679868
+
+
+Epoch 9/15 started, lr: 0.028846154, dataset size: 598
+
+
+Epoch 9/15 - 26,08s - loss: 49.752747 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 21,49s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 174	 15	 104	 0.9206349	 0.62589926	 0.745182
+B-TIMEX	 85	 34	 148	 0.71428573	 0.36480686	 0.48295453
+tp: 259 fp: 49 fn: 252 labels: 2
+Macro-average	 prec: 0.8174603, rec: 0.49535304, f1: 0.61689115
+Micro-average	 prec: 0.84090906, rec: 0.5068493, f1: 0.63247865
+
+
+Epoch 10/15 started, lr: 0.028708134, dataset size: 598
+
+
+Epoch 10/15 - 26,01s - loss: 47.557358 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 21,56s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 219	 35	 59	 0.86220473	 0.7877698	 0.8233082
+B-TIMEX	 124	 23	 109	 0.8435374	 0.53218883	 0.6526316
+tp: 343 fp: 58 fn: 168 labels: 2
+Macro-average	 prec: 0.85287106, rec: 0.65997934, f1: 0.74412817
+Micro-average	 prec: 0.8553616, rec: 0.6712329, f1: 0.752193
+
+
+Epoch 11/15 started, lr: 0.028571429, dataset size: 598
+
+
+Epoch 11/15 - 25,92s - loss: 40.650906 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 21,51s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 221	 41	 57	 0.84351146	 0.794964	 0.8185185
+B-TIMEX	 150	 32	 83	 0.82417583	 0.64377683	 0.7228915
+tp: 371 fp: 73 fn: 140 labels: 2
+Macro-average	 prec: 0.83384365, rec: 0.7193704, f1: 0.7723887
+Micro-average	 prec: 0.8355856, rec: 0.72602737, f1: 0.7769633
+
+
+Epoch 12/15 started, lr: 0.02843602, dataset size: 598
+
+
+Epoch 12/15 - 25,88s - loss: 39.327797 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 21,48s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 227	 43	 51	 0.84074074	 0.81654674	 0.82846713
+B-TIMEX	 152	 34	 81	 0.8172043	 0.6523605	 0.725537
+tp: 379 fp: 77 fn: 132 labels: 2
+Macro-average	 prec: 0.8289725, rec: 0.7344536, f1: 0.7788559
+Micro-average	 prec: 0.83114034, rec: 0.74168295, f1: 0.7838676
+
+
+Epoch 13/15 started, lr: 0.028301887, dataset size: 598
+
+
+Epoch 13/15 - 25,91s - loss: 37.361496 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 21,52s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 212	 32	 66	 0.86885244	 0.76258993	 0.81226057
+B-TIMEX	 145	 34	 88	 0.81005585	 0.6223176	 0.70388347
+tp: 357 fp: 66 fn: 154 labels: 2
+Macro-average	 prec: 0.8394542, rec: 0.69245374, f1: 0.758901
+Micro-average	 prec: 0.8439716, rec: 0.69863015, f1: 0.7644539
+
+
+Epoch 14/15 started, lr: 0.028169012, dataset size: 598
+
+
+Epoch 14/15 - 25,94s - loss: 35.641582 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 21,51s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 205	 20	 73	 0.9111111	 0.73741007	 0.8151093
+B-TIMEX	 148	 30	 85	 0.83146065	 0.6351931	 0.72019464
+tp: 353 fp: 50 fn: 158 labels: 2
+Macro-average	 prec: 0.8712859, rec: 0.6863016, f1: 0.76780903
+Micro-average	 prec: 0.87593055, rec: 0.69080234, f1: 0.7724289
+
+
+Epoch 15/15 started, lr: 0.02803738, dataset size: 598
+
+
+Epoch 15/15 - 25,93s - loss: 35.951874 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 119
+time to finish evaluation: 21,48s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 223	 29	 55	 0.88492066	 0.8021583	 0.84150946
+B-TIMEX	 157	 23	 76	 0.87222224	 0.6738197	 0.76029056
+tp: 380 fp: 52 fn: 131 labels: 2
+Macro-average	 prec: 0.87857145, rec: 0.737989, f1: 0.8021674
+Micro-average	 prec: 0.8796296, rec: 0.74363995, f1: 0.8059385
+
+[2022-10-02 22:47:34,331] Training done.
+[2022-10-02 22:47:34,331] Best validation f1: 0.8059
+[2022-10-02 22:47:34,332] ----------------------------------------------------------------------------------------------------
+[2022-10-02 22:47:40,470] ----------------------------------------------------------------------------------------------------
+[2022-10-02 22:47:40,470] Start training for the following setup:
+[2022-10-02 22:47:40,470] 	model: sparknlp
+[2022-10-02 22:47:40,470] 	data: ['spanish_timebank']
+[2022-10-02 22:47:40,470] 	language: es
+[2022-10-02 22:47:40,470] 	n_epochs: 15
+[2022-10-02 22:47:40,470] 	dropout: 0.01
+[2022-10-02 22:47:40,470] 	batch_size: 32
+[2022-10-02 22:47:40,470] 	learning_rate: 0.01
+[2022-10-02 22:47:40,470] 	embeddings: glove_840B_300_xx
+[2022-10-02 22:47:40,471] 	models_path: /home/hugosousa/Projects/tei2go/models
+[2022-10-02 22:47:40,471] 	resources_path: /home/hugosousa/Projects/tei2go/resources
+[2022-10-02 22:47:40,471] 	logs_path: /home/hugosousa/Projects/tei2go/logs
+[2022-10-02 22:47:40,471] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-02 22:47:40,471] 	gpu: False
+[2022-10-02 22:47:40,471] Found preprocessed data.
+[2022-10-02 22:47:40,471] Starting spark session with GPU set to False.
+[2022-10-02 22:47:54,768] Initializing model for language es.
+[2022-10-02 22:47:54,768] Started train loop with id 20221002224754
+[2022-10-02 22:47:54,769] Building training pipeline.
+[2022-10-02 22:48:29,858] Initialize training.
+[2022-10-02 23:00:35,188] Train done.
+[2022-10-02 23:00:35,189] Storing NER weights.
+[2022-10-02 23:00:36,617] Retrieving metrics from sparknlp log file. 
+Notice that this metrics are computed on the BIO annotation and not on the tag identification level.
+[2022-10-02 23:00:36,617] Name of the selected graph: ner-dl/blstm_10_300_128_120.pb
+Training started - total epochs: 15 - lr: 0.01 - batch size: 32 - labels: 3 - chars: 91 - training examples: 606
+
+
+Epoch 1/15 started, lr: 0.01, dataset size: 606
+
+
+Epoch 1/15 - 27,52s - loss: 3376.8008 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,84s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 2/15 started, lr: 0.0099502485, dataset size: 606
+
+
+Epoch 2/15 - 25,13s - loss: 574.9808 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,22s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 3/15 started, lr: 0.00990099, dataset size: 606
+
+
+Epoch 3/15 - 24,98s - loss: 307.75082 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,12s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 4/15 started, lr: 0.009852217, dataset size: 606
+
+
+Epoch 4/15 - 24,74s - loss: 230.83969 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,13s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 5/15 started, lr: 0.009803922, dataset size: 606
+
+
+Epoch 5/15 - 24,73s - loss: 216.86665 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,03s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 6/15 started, lr: 0.009756098, dataset size: 606
+
+
+Epoch 6/15 - 24,75s - loss: 198.98206 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 19,93s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 7/15 started, lr: 0.009708738, dataset size: 606
+
+
+Epoch 7/15 - 24,59s - loss: 191.62311 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 19,79s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 8/15 started, lr: 0.009661836, dataset size: 606
+
+
+Epoch 8/15 - 24,51s - loss: 189.62468 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 19,75s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 9/15 started, lr: 0.009615385, dataset size: 606
+
+
+Epoch 9/15 - 24,58s - loss: 184.35217 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 19,80s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 10/15 started, lr: 0.009569379, dataset size: 606
+
+
+Epoch 10/15 - 24,46s - loss: 181.93723 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 19,75s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 11/15 started, lr: 0.00952381, dataset size: 606
+
+
+Epoch 11/15 - 24,46s - loss: 179.53557 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 19,78s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 12/15 started, lr: 0.009478673, dataset size: 606
+
+
+Epoch 12/15 - 24,45s - loss: 178.76505 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 19,76s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 13/15 started, lr: 0.009433962, dataset size: 606
+
+
+Epoch 13/15 - 24,46s - loss: 177.8048 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 19,80s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 14/15 started, lr: 0.009389671, dataset size: 606
+
+
+Epoch 14/15 - 24,42s - loss: 174.23447 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 19,73s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 15/15 started, lr: 0.009345794, dataset size: 606
+
+
+Epoch 15/15 - 24,52s - loss: 174.16315 - batches: 19
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 19,71s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 249	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 207	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 456 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+[2022-10-02 23:00:36,618] Training done.
+[2022-10-02 23:00:36,618] Best validation f1: 0.0000
+[2022-10-02 23:00:36,618] ----------------------------------------------------------------------------------------------------
+[2022-10-02 23:00:42,959] ----------------------------------------------------------------------------------------------------
+[2022-10-02 23:00:42,959] Start training for the following setup:
+[2022-10-02 23:00:42,960] 	model: sparknlp
+[2022-10-02 23:00:42,960] 	data: ['spanish_timebank']
+[2022-10-02 23:00:42,960] 	language: es
+[2022-10-02 23:00:42,960] 	n_epochs: 15
+[2022-10-02 23:00:42,960] 	dropout: 0.4
+[2022-10-02 23:00:42,960] 	batch_size: 8
+[2022-10-02 23:00:42,960] 	learning_rate: 0.003
+[2022-10-02 23:00:42,960] 	embeddings: glove_840B_300_xx
+[2022-10-02 23:00:42,960] 	models_path: /home/hugosousa/Projects/tei2go/models
+[2022-10-02 23:00:42,960] 	resources_path: /home/hugosousa/Projects/tei2go/resources
+[2022-10-02 23:00:42,960] 	logs_path: /home/hugosousa/Projects/tei2go/logs
+[2022-10-02 23:00:42,960] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-02 23:00:42,960] 	gpu: False
+[2022-10-02 23:00:42,960] Found preprocessed data.
+[2022-10-02 23:00:42,960] Starting spark session with GPU set to False.
+[2022-10-02 23:00:59,824] Initializing model for language es.
+[2022-10-02 23:00:59,824] Started train loop with id 20221002230059
+[2022-10-02 23:00:59,824] Building training pipeline.
+[2022-10-02 23:01:49,043] Initialize training.
+[2022-10-02 23:14:14,396] Train done.
+[2022-10-02 23:14:14,400] Storing NER weights.
+[2022-10-02 23:14:15,726] Retrieving metrics from sparknlp log file. 
+Notice that this metrics are computed on the BIO annotation and not on the tag identification level.
+[2022-10-02 23:14:15,727] Name of the selected graph: ner-dl/blstm_10_300_128_120.pb
+Training started - total epochs: 15 - lr: 0.003 - batch size: 8 - labels: 3 - chars: 91 - training examples: 617
+
+
+Epoch 1/15 started, lr: 0.003, dataset size: 617
+
+
+Epoch 1/15 - 29,32s - loss: 900.95197 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 21,25s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 165	 47	 53	 0.7783019	 0.75688076	 0.7674418
+B-TIMEX	 102	 17	 92	 0.85714287	 0.52577317	 0.65175724
+tp: 267 fp: 64 fn: 145 labels: 2
+Macro-average	 prec: 0.8177224, rec: 0.64132696, f1: 0.7188618
+Micro-average	 prec: 0.8066465, rec: 0.64805824, f1: 0.718708
+
+
+Epoch 2/15 started, lr: 0.0029850747, dataset size: 617
+
+
+Epoch 2/15 - 27,45s - loss: 318.44168 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 20,79s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 189	 46	 29	 0.8042553	 0.8669725	 0.8344371
+B-TIMEX	 137	 19	 57	 0.8782051	 0.7061856	 0.7828572
+tp: 326 fp: 65 fn: 86 labels: 2
+Macro-average	 prec: 0.8412302, rec: 0.786579, f1: 0.8129872
+Micro-average	 prec: 0.8337596, rec: 0.79126215, f1: 0.8119553
+
+
+Epoch 3/15 started, lr: 0.0029702971, dataset size: 617
+
+
+Epoch 3/15 - 27,31s - loss: 225.43582 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 20,58s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 191	 43	 27	 0.8162393	 0.8761468	 0.8451327
+B-TIMEX	 147	 21	 47	 0.875	 0.757732	 0.81215477
+tp: 338 fp: 64 fn: 74 labels: 2
+Macro-average	 prec: 0.8456197, rec: 0.81693935, f1: 0.8310321
+Micro-average	 prec: 0.840796, rec: 0.8203884, f1: 0.83046687
+
+
+Epoch 4/15 started, lr: 0.002955665, dataset size: 617
+
+
+Epoch 4/15 - 27,21s - loss: 190.62155 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 20,57s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 194	 34	 24	 0.85087717	 0.88990825	 0.8699552
+B-TIMEX	 157	 25	 37	 0.86263734	 0.80927837	 0.8351064
+tp: 351 fp: 59 fn: 61 labels: 2
+Macro-average	 prec: 0.8567573, rec: 0.8495933, f1: 0.85316026
+Micro-average	 prec: 0.8560976, rec: 0.85194176, f1: 0.85401464
+
+
+Epoch 5/15 started, lr: 0.0029411765, dataset size: 617
+
+
+Epoch 5/15 - 27,20s - loss: 151.75208 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 21,00s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 202	 46	 16	 0.8145161	 0.9266055	 0.8669528
+B-TIMEX	 163	 26	 31	 0.86243385	 0.8402062	 0.8511749
+tp: 365 fp: 72 fn: 47 labels: 2
+Macro-average	 prec: 0.838475, rec: 0.88340586, f1: 0.8603542
+Micro-average	 prec: 0.83524024, rec: 0.8859223, f1: 0.8598351
+
+
+Epoch 6/15 started, lr: 0.0029268293, dataset size: 617
+
+
+Epoch 6/15 - 26,99s - loss: 118.72981 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 20,30s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 205	 45	 13	 0.82	 0.940367	 0.8760684
+B-TIMEX	 161	 23	 33	 0.875	 0.8298969	 0.8518519
+tp: 366 fp: 68 fn: 46 labels: 2
+Macro-average	 prec: 0.84749997, rec: 0.88513196, f1: 0.8659073
+Micro-average	 prec: 0.843318, rec: 0.88834953, f1: 0.8652482
+
+
+Epoch 7/15 started, lr: 0.0029126215, dataset size: 617
+
+
+Epoch 7/15 - 26,87s - loss: 102.761215 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 20,23s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 205	 38	 13	 0.8436214	 0.940367	 0.8893709
+B-TIMEX	 166	 22	 28	 0.88297874	 0.8556701	 0.8691099
+tp: 371 fp: 60 fn: 41 labels: 2
+Macro-average	 prec: 0.8633001, rec: 0.89801854, f1: 0.8803171
+Micro-average	 prec: 0.8607889, rec: 0.90048546, f1: 0.88018984
+
+
+Epoch 8/15 started, lr: 0.0028985508, dataset size: 617
+
+
+Epoch 8/15 - 26,79s - loss: 102.362045 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 20,15s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 197	 28	 21	 0.8755556	 0.9036697	 0.88939047
+B-TIMEX	 166	 20	 28	 0.8924731	 0.8556701	 0.87368417
+tp: 363 fp: 48 fn: 49 labels: 2
+Macro-average	 prec: 0.88401437, rec: 0.8796699, f1: 0.8818368
+Micro-average	 prec: 0.8832117, rec: 0.88106793, f1: 0.8821385
+
+
+Epoch 9/15 started, lr: 0.0028846154, dataset size: 617
+
+
+Epoch 9/15 - 26,81s - loss: 87.00868 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 20,23s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 199	 32	 19	 0.86147183	 0.91284406	 0.8864143
+B-TIMEX	 164	 22	 30	 0.8817204	 0.8453608	 0.8631578
+tp: 363 fp: 54 fn: 49 labels: 2
+Macro-average	 prec: 0.8715961, rec: 0.87910247, f1: 0.8753332
+Micro-average	 prec: 0.8705036, rec: 0.88106793, f1: 0.87575394
+
+
+Epoch 10/15 started, lr: 0.0028708135, dataset size: 617
+
+
+Epoch 10/15 - 26,81s - loss: 75.15327 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 20,17s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 202	 26	 16	 0.88596493	 0.9266055	 0.9058296
+B-TIMEX	 168	 19	 26	 0.8983957	 0.8659794	 0.88188976
+tp: 370 fp: 45 fn: 42 labels: 2
+Macro-average	 prec: 0.8921803, rec: 0.89629245, f1: 0.8942317
+Micro-average	 prec: 0.8915663, rec: 0.89805824, f1: 0.8948005
+
+
+Epoch 11/15 started, lr: 0.002857143, dataset size: 617
+
+
+Epoch 11/15 - 26,78s - loss: 70.391975 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 20,27s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 197	 22	 21	 0.8995434	 0.9036697	 0.9016018
+B-TIMEX	 160	 14	 34	 0.9195402	 0.82474226	 0.86956525
+tp: 357 fp: 36 fn: 55 labels: 2
+Macro-average	 prec: 0.90954185, rec: 0.86420596, f1: 0.88629454
+Micro-average	 prec: 0.90839696, rec: 0.86650485, f1: 0.88695645
+
+
+Epoch 12/15 started, lr: 0.002843602, dataset size: 617
+
+
+Epoch 12/15 - 26,78s - loss: 65.69404 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 20,20s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 198	 32	 20	 0.8608696	 0.9082569	 0.88392866
+B-TIMEX	 165	 19	 29	 0.8967391	 0.8505155	 0.8730158
+tp: 363 fp: 51 fn: 49 labels: 2
+Macro-average	 prec: 0.8788043, rec: 0.8793862, f1: 0.87909514
+Micro-average	 prec: 0.8768116, rec: 0.88106793, f1: 0.8789347
+
+
+Epoch 13/15 started, lr: 0.002830189, dataset size: 617
+
+
+Epoch 13/15 - 26,78s - loss: 55.057728 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 20,24s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 197	 25	 21	 0.8873874	 0.9036697	 0.8954545
+B-TIMEX	 165	 17	 29	 0.9065934	 0.8505155	 0.87765956
+tp: 362 fp: 42 fn: 50 labels: 2
+Macro-average	 prec: 0.8969904, rec: 0.8770926, f1: 0.8869299
+Micro-average	 prec: 0.8960396, rec: 0.8786408, f1: 0.88725495
+
+
+Epoch 14/15 started, lr: 0.0028169013, dataset size: 617
+
+
+Epoch 14/15 - 26,76s - loss: 67.70221 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 20,18s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 203	 27	 15	 0.8826087	 0.93119264	 0.90625
+B-TIMEX	 168	 21	 26	 0.8888889	 0.8659794	 0.87728465
+tp: 371 fp: 48 fn: 41 labels: 2
+Macro-average	 prec: 0.8857488, rec: 0.89858603, f1: 0.8921212
+Micro-average	 prec: 0.88544154, rec: 0.90048546, f1: 0.8929001
+
+
+Epoch 15/15 started, lr: 0.0028037382, dataset size: 617
+
+
+Epoch 15/15 - 26,79s - loss: 56.086502 - batches: 78
+Quality on validation dataset (20.0%), validation examples = 123
+time to finish evaluation: 20,20s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 203	 35	 15	 0.85294116	 0.93119264	 0.8903508
+B-TIMEX	 166	 22	 28	 0.88297874	 0.8556701	 0.8691099
+tp: 369 fp: 57 fn: 43 labels: 2
+Macro-average	 prec: 0.86796, rec: 0.89343137, f1: 0.8805115
+Micro-average	 prec: 0.86619717, rec: 0.8956311, f1: 0.8806683
+
+[2022-10-02 23:14:15,727] Training done.
+[2022-10-02 23:14:15,727] Best validation f1: 0.8948
+[2022-10-02 23:14:15,727] ----------------------------------------------------------------------------------------------------
+[2022-10-02 23:14:20,592] ----------------------------------------------------------------------------------------------------
+[2022-10-02 23:14:20,592] Start training for the following setup:
+[2022-10-02 23:14:20,592] 	model: sparknlp
+[2022-10-02 23:14:20,592] 	data: ['spanish_timebank']
+[2022-10-02 23:14:20,592] 	language: es
+[2022-10-02 23:14:20,592] 	n_epochs: 15
+[2022-10-02 23:14:20,592] 	dropout: 0.3
+[2022-10-02 23:14:20,592] 	batch_size: 4
+[2022-10-02 23:14:20,592] 	learning_rate: 0.1
+[2022-10-02 23:14:20,592] 	embeddings: glove_840B_300_xx
+[2022-10-02 23:14:20,592] 	models_path: /home/hugosousa/Projects/tei2go/models
+[2022-10-02 23:14:20,592] 	resources_path: /home/hugosousa/Projects/tei2go/resources
+[2022-10-02 23:14:20,592] 	logs_path: /home/hugosousa/Projects/tei2go/logs
+[2022-10-02 23:14:20,592] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-02 23:14:20,592] 	gpu: False
+[2022-10-02 23:14:20,592] Found preprocessed data.
+[2022-10-02 23:14:20,592] Starting spark session with GPU set to False.
+[2022-10-02 23:14:35,028] Initializing model for language es.
+[2022-10-02 23:14:35,029] Started train loop with id 20221002231435
+[2022-10-02 23:14:35,029] Building training pipeline.
+[2022-10-02 23:15:01,748] Initialize training.
+[2022-10-02 23:29:46,949] Train done.
+[2022-10-02 23:29:46,953] Storing NER weights.
+[2022-10-02 23:29:48,313] Retrieving metrics from sparknlp log file. 
+Notice that this metrics are computed on the BIO annotation and not on the tag identification level.
+[2022-10-02 23:29:48,314] Name of the selected graph: ner-dl/blstm_10_300_128_120.pb
+Training started - total epochs: 15 - lr: 0.1 - batch size: 4 - labels: 3 - chars: 90 - training examples: 590
+
+
+Epoch 1/15 started, lr: 0.1, dataset size: 590
+
+
+Epoch 1/15 - 38,89s - loss: 19419.111 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 21,27s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 11	 20	 263	 0.3548387	 0.040145986	 0.07213114
+B-TIMEX	 0	 0	 240	 0.0	 0.0	 0.0
+tp: 11 fp: 20 fn: 503 labels: 2
+Macro-average	 prec: 0.17741935, rec: 0.020072993, f1: 0.03606557
+Micro-average	 prec: 0.3548387, rec: 0.021400778, f1: 0.04036697
+
+
+Epoch 2/15 started, lr: 0.09950249, dataset size: 590
+
+
+Epoch 2/15 - 36,83s - loss: 12064.705 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,73s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 274	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 240	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 514 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 3/15 started, lr: 0.0990099, dataset size: 590
+
+
+Epoch 3/15 - 36,73s - loss: 9919.244 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,54s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 8	 8	 266	 0.5	 0.02919708	 0.05517241
+B-TIMEX	 7	 7	 233	 0.5	 0.029166667	 0.055118114
+tp: 15 fp: 15 fn: 499 labels: 2
+Macro-average	 prec: 0.5, rec: 0.029181873, f1: 0.05514526
+Micro-average	 prec: 0.5, rec: 0.02918288, f1: 0.055147063
+
+
+Epoch 4/15 started, lr: 0.09852217, dataset size: 590
+
+
+Epoch 4/15 - 36,52s - loss: 10743.809 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,55s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 274	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 240	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 514 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 5/15 started, lr: 0.09803922, dataset size: 590
+
+
+Epoch 5/15 - 36,46s - loss: 17256.014 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,57s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 274	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 240	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 514 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 6/15 started, lr: 0.09756098, dataset size: 590
+
+
+Epoch 6/15 - 36,44s - loss: 15031.66 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,44s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 274	 0.0	 0.0	 0.0
+B-TIMEX	 0	 2	 240	 0.0	 0.0	 0.0
+tp: 0 fp: 2 fn: 514 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 7/15 started, lr: 0.09708738, dataset size: 590
+
+
+Epoch 7/15 - 36,87s - loss: 18341.305 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,26s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 274	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 240	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 514 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 8/15 started, lr: 0.09661836, dataset size: 590
+
+
+Epoch 8/15 - 36,23s - loss: 12312.716 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,21s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 178	 1529	 96	 0.10427651	 0.649635	 0.17970721
+B-TIMEX	 29	 318	 211	 0.08357349	 0.12083333	 0.09880749
+tp: 207 fp: 1847 fn: 307 labels: 2
+Macro-average	 prec: 0.093925, rec: 0.38523418, f1: 0.15102755
+Micro-average	 prec: 0.10077897, rec: 0.40272373, f1: 0.16121493
+
+
+Epoch 9/15 started, lr: 0.09615385, dataset size: 590
+
+
+Epoch 9/15 - 36,07s - loss: 13837.77 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,17s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 274	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 240	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 514 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 10/15 started, lr: 0.09569378, dataset size: 590
+
+
+Epoch 10/15 - 36,17s - loss: 15895.265 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,17s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 274	 0.0	 0.0	 0.0
+B-TIMEX	 0	 1	 240	 0.0	 0.0	 0.0
+tp: 0 fp: 1 fn: 514 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 11/15 started, lr: 0.095238104, dataset size: 590
+
+
+Epoch 11/15 - 36,14s - loss: 11418.204 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,14s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 2	 274	 0.0	 0.0	 0.0
+B-TIMEX	 0	 2	 240	 0.0	 0.0	 0.0
+tp: 0 fp: 4 fn: 514 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 12/15 started, lr: 0.09478673, dataset size: 590
+
+
+Epoch 12/15 - 36,06s - loss: 11482.064 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,14s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 1	 274	 0.0	 0.0	 0.0
+B-TIMEX	 0	 1	 240	 0.0	 0.0	 0.0
+tp: 0 fp: 2 fn: 514 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 13/15 started, lr: 0.09433963, dataset size: 590
+
+
+Epoch 13/15 - 36,16s - loss: 13617.171 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,13s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 274	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 240	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 514 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 14/15 started, lr: 0.09389671, dataset size: 590
+
+
+Epoch 14/15 - 36,03s - loss: 19401.979 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,15s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 274	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 240	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 514 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 15/15 started, lr: 0.09345794, dataset size: 590
+
+
+Epoch 15/15 - 36,15s - loss: 15335.638 - batches: 148
+Quality on validation dataset (20.0%), validation examples = 118
+time to finish evaluation: 20,16s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 274	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 240	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 514 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+[2022-10-02 23:29:48,314] Training done.
+[2022-10-02 23:29:48,314] Best validation f1: 0.1612
+[2022-10-02 23:29:48,314] ----------------------------------------------------------------------------------------------------
+[2022-10-02 23:29:52,242] ----------------------------------------------------------------------------------------------------
+[2022-10-02 23:29:52,242] Start training for the following setup:
+[2022-10-02 23:29:52,242] 	model: sparknlp
+[2022-10-02 23:29:52,242] 	data: ['spanish_timebank']
+[2022-10-02 23:29:52,242] 	language: es
+[2022-10-02 23:29:52,242] 	n_epochs: 15
+[2022-10-02 23:29:52,242] 	dropout: 0.2
+[2022-10-02 23:29:52,242] 	batch_size: 4
+[2022-10-02 23:29:52,242] 	learning_rate: 0.01
+[2022-10-02 23:29:52,242] 	embeddings: glove_840B_300_xx
+[2022-10-02 23:29:52,242] 	models_path: /home/hugosousa/Projects/tei2go/models
+[2022-10-02 23:29:52,242] 	resources_path: /home/hugosousa/Projects/tei2go/resources
+[2022-10-02 23:29:52,242] 	logs_path: /home/hugosousa/Projects/tei2go/logs
+[2022-10-02 23:29:52,242] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-02 23:29:52,243] 	gpu: False
+[2022-10-02 23:29:52,243] Found preprocessed data.
+[2022-10-02 23:29:52,243] Starting spark session with GPU set to False.
+[2022-10-02 23:30:06,818] Initializing model for language es.
+[2022-10-02 23:30:06,819] Started train loop with id 20221002233006
+[2022-10-02 23:30:06,819] Building training pipeline.
+[2022-10-02 23:30:44,125] Initialize training.
+[2022-10-02 23:45:27,089] Train done.
+[2022-10-02 23:45:27,093] Storing NER weights.
+[2022-10-02 23:45:28,474] Retrieving metrics from sparknlp log file. 
+Notice that this metrics are computed on the BIO annotation and not on the tag identification level.
+[2022-10-02 23:45:28,478] Name of the selected graph: ner-dl/blstm_10_300_128_120.pb
+Training started - total epochs: 15 - lr: 0.01 - batch size: 4 - labels: 3 - chars: 91 - training examples: 582
+
+
+Epoch 1/15 started, lr: 0.01, dataset size: 582
+
+
+Epoch 1/15 - 38,40s - loss: 2085.7017 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 21,68s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 190	 73	 73	 0.72243345	 0.72243345	 0.72243345
+B-TIMEX	 118	 59	 119	 0.6666667	 0.4978903	 0.57004833
+tp: 308 fp: 132 fn: 192 labels: 2
+Macro-average	 prec: 0.69455004, rec: 0.6101619, f1: 0.6496269
+Micro-average	 prec: 0.7, rec: 0.616, f1: 0.65531915
+
+
+Epoch 2/15 started, lr: 0.0099502485, dataset size: 582
+
+
+Epoch 2/15 - 36,62s - loss: 884.1989 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,91s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 189	 56	 74	 0.7714286	 0.7186312	 0.7440945
+B-TIMEX	 108	 63	 129	 0.6315789	 0.4556962	 0.52941173
+tp: 297 fp: 119 fn: 203 labels: 2
+Macro-average	 prec: 0.70150375, rec: 0.5871637, f1: 0.6392612
+Micro-average	 prec: 0.7139423, rec: 0.594, f1: 0.6484716
+
+
+Epoch 3/15 started, lr: 0.00990099, dataset size: 582
+
+
+Epoch 3/15 - 36,32s - loss: 846.561 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,75s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 201	 64	 62	 0.75849056	 0.76425856	 0.76136357
+B-TIMEX	 127	 58	 110	 0.6864865	 0.53586495	 0.6018957
+tp: 328 fp: 122 fn: 172 labels: 2
+Macro-average	 prec: 0.7224885, rec: 0.6500617, f1: 0.6843642
+Micro-average	 prec: 0.72888887, rec: 0.656, f1: 0.6905263
+
+
+Epoch 4/15 started, lr: 0.009852217, dataset size: 582
+
+
+Epoch 4/15 - 36,29s - loss: 823.1767 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,67s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 204	 62	 59	 0.7669173	 0.7756654	 0.7712665
+B-TIMEX	 133	 60	 104	 0.68911916	 0.5611814	 0.6186046
+tp: 337 fp: 122 fn: 163 labels: 2
+Macro-average	 prec: 0.7280182, rec: 0.6684234, f1: 0.6969491
+Micro-average	 prec: 0.73420477, rec: 0.674, f1: 0.7028154
+
+
+Epoch 5/15 started, lr: 0.009803922, dataset size: 582
+
+
+Epoch 5/15 - 36,12s - loss: 821.60425 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,80s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 223	 105	 40	 0.67987806	 0.84790874	 0.75465316
+B-TIMEX	 133	 69	 104	 0.65841585	 0.5611814	 0.6059225
+tp: 356 fp: 174 fn: 144 labels: 2
+Macro-average	 prec: 0.66914696, rec: 0.7045451, f1: 0.6863899
+Micro-average	 prec: 0.6716981, rec: 0.712, f1: 0.6912621
+
+
+Epoch 6/15 started, lr: 0.009756098, dataset size: 582
+
+
+Epoch 6/15 - 36,07s - loss: 860.011 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,56s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 192	 42	 71	 0.82051283	 0.73003805	 0.7726358
+B-TIMEX	 152	 43	 85	 0.7794872	 0.6413502	 0.7037037
+tp: 344 fp: 85 fn: 156 labels: 2
+Macro-average	 prec: 0.8, rec: 0.6856941, f1: 0.7384499
+Micro-average	 prec: 0.8018648, rec: 0.688, f1: 0.7405813
+
+
+Epoch 7/15 started, lr: 0.009708738, dataset size: 582
+
+
+Epoch 7/15 - 35,92s - loss: 791.89575 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,54s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 204	 33	 59	 0.8607595	 0.7756654	 0.816
+B-TIMEX	 158	 34	 79	 0.8229167	 0.6666667	 0.73659676
+tp: 362 fp: 67 fn: 138 labels: 2
+Macro-average	 prec: 0.8418381, rec: 0.721166, f1: 0.7768438
+Micro-average	 prec: 0.84382284, rec: 0.724, f1: 0.7793326
+
+
+Epoch 8/15 started, lr: 0.009661836, dataset size: 582
+
+
+Epoch 8/15 - 35,96s - loss: 792.8156 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,59s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 208	 68	 55	 0.7536232	 0.79087454	 0.7717997
+B-TIMEX	 138	 61	 99	 0.6934673	 0.5822785	 0.6330275
+tp: 346 fp: 129 fn: 154 labels: 2
+Macro-average	 prec: 0.72354525, rec: 0.6865765, f1: 0.7045763
+Micro-average	 prec: 0.72842103, rec: 0.692, f1: 0.7097436
+
+
+Epoch 9/15 started, lr: 0.009615385, dataset size: 582
+
+
+Epoch 9/15 - 36,62s - loss: 895.03546 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,45s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 219	 82	 44	 0.72757477	 0.8326996	 0.7765958
+B-TIMEX	 142	 60	 95	 0.7029703	 0.59915614	 0.64692485
+tp: 361 fp: 142 fn: 139 labels: 2
+Macro-average	 prec: 0.71527255, rec: 0.71592784, f1: 0.7156001
+Micro-average	 prec: 0.71769387, rec: 0.722, f1: 0.7198404
+
+
+Epoch 10/15 started, lr: 0.009569379, dataset size: 582
+
+
+Epoch 10/15 - 35,87s - loss: 794.0621 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,42s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 219	 70	 44	 0.75778544	 0.8326996	 0.7934782
+B-TIMEX	 139	 51	 98	 0.73157895	 0.5864979	 0.65105385
+tp: 358 fp: 121 fn: 142 labels: 2
+Macro-average	 prec: 0.7446822, rec: 0.7095988, f1: 0.7267173
+Micro-average	 prec: 0.7473904, rec: 0.716, f1: 0.7313585
+
+
+Epoch 11/15 started, lr: 0.00952381, dataset size: 582
+
+
+Epoch 11/15 - 35,84s - loss: 801.38434 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,38s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 200	 49	 63	 0.8032129	 0.76045626	 0.78124994
+B-TIMEX	 133	 52	 104	 0.7189189	 0.5611814	 0.63033175
+tp: 333 fp: 101 fn: 167 labels: 2
+Macro-average	 prec: 0.7610659, rec: 0.6608188, f1: 0.7074084
+Micro-average	 prec: 0.7672811, rec: 0.666, f1: 0.71306205
+
+
+Epoch 12/15 started, lr: 0.009478673, dataset size: 582
+
+
+Epoch 12/15 - 35,78s - loss: 796.46564 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,34s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 215	 79	 48	 0.73129255	 0.8174905	 0.7719928
+B-TIMEX	 137	 63	 100	 0.685	 0.5780591	 0.62700224
+tp: 352 fp: 142 fn: 148 labels: 2
+Macro-average	 prec: 0.7081463, rec: 0.69777477, f1: 0.7029223
+Micro-average	 prec: 0.7125506, rec: 0.704, f1: 0.70824945
+
+
+Epoch 13/15 started, lr: 0.009433962, dataset size: 582
+
+
+Epoch 13/15 - 35,77s - loss: 795.8445 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,35s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 195	 40	 68	 0.82978725	 0.7414449	 0.7831326
+B-TIMEX	 137	 48	 100	 0.74054056	 0.5780591	 0.64928913
+tp: 332 fp: 88 fn: 168 labels: 2
+Macro-average	 prec: 0.7851639, rec: 0.659752, f1: 0.7170154
+Micro-average	 prec: 0.7904762, rec: 0.664, f1: 0.7217392
+
+
+Epoch 14/15 started, lr: 0.009389671, dataset size: 582
+
+
+Epoch 14/15 - 35,70s - loss: 779.1873 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,34s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 180	 31	 83	 0.8530806	 0.68441063	 0.75949365
+B-TIMEX	 140	 40	 97	 0.7777778	 0.5907173	 0.67146283
+tp: 320 fp: 71 fn: 180 labels: 2
+Macro-average	 prec: 0.8154292, rec: 0.63756394, f1: 0.7156101
+Micro-average	 prec: 0.81841433, rec: 0.64, f1: 0.7182941
+
+
+Epoch 15/15 started, lr: 0.009345794, dataset size: 582
+
+
+Epoch 15/15 - 35,75s - loss: 760.4316 - batches: 146
+Quality on validation dataset (20.0%), validation examples = 116
+time to finish evaluation: 20,35s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 192	 32	 71	 0.85714287	 0.73003805	 0.7885011
+B-TIMEX	 124	 41	 113	 0.75151515	 0.5232068	 0.61691546
+tp: 316 fp: 73 fn: 184 labels: 2
+Macro-average	 prec: 0.80432904, rec: 0.62662244, f1: 0.70444125
+Micro-average	 prec: 0.8123393, rec: 0.632, f1: 0.71091115
+
+[2022-10-02 23:45:28,478] Training done.
+[2022-10-02 23:45:28,478] Best validation f1: 0.7793
+[2022-10-02 23:45:28,478] ----------------------------------------------------------------------------------------------------
+[2022-10-02 23:45:32,461] ----------------------------------------------------------------------------------------------------
+[2022-10-02 23:45:32,461] Start training for the following setup:
+[2022-10-02 23:45:32,461] 	model: sparknlp
+[2022-10-02 23:45:32,462] 	data: ['spanish_timebank']
+[2022-10-02 23:45:32,462] 	language: es
+[2022-10-02 23:45:32,462] 	n_epochs: 15
+[2022-10-02 23:45:32,462] 	dropout: 0.3
+[2022-10-02 23:45:32,462] 	batch_size: 64
+[2022-10-02 23:45:32,462] 	learning_rate: 0.03
+[2022-10-02 23:45:32,462] 	embeddings: glove_840B_300_xx
+[2022-10-02 23:45:32,462] 	models_path: /home/hugosousa/Projects/tei2go/models
+[2022-10-02 23:45:32,462] 	resources_path: /home/hugosousa/Projects/tei2go/resources
+[2022-10-02 23:45:32,462] 	logs_path: /home/hugosousa/Projects/tei2go/logs
+[2022-10-02 23:45:32,462] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-02 23:45:32,462] 	gpu: False
+[2022-10-02 23:45:32,462] Found preprocessed data.
+[2022-10-02 23:45:32,462] Starting spark session with GPU set to False.
+[2022-10-02 23:45:46,432] Initializing model for language es.
+[2022-10-02 23:45:46,432] Started train loop with id 20221002234546
+[2022-10-02 23:45:46,432] Building training pipeline.
+[2022-10-02 23:46:11,641] Initialize training.
+[2022-10-02 23:58:25,079] Train done.
+[2022-10-02 23:58:25,080] Storing NER weights.
+[2022-10-02 23:58:26,424] Retrieving metrics from sparknlp log file. 
+Notice that this metrics are computed on the BIO annotation and not on the tag identification level.
+[2022-10-02 23:58:26,425] Name of the selected graph: ner-dl/blstm_10_300_128_120.pb
+Training started - total epochs: 15 - lr: 0.03 - batch size: 64 - labels: 3 - chars: 92 - training examples: 620
+
+
+Epoch 1/15 started, lr: 0.03, dataset size: 620
+
+
+Epoch 1/15 - 31,44s - loss: 955.9207 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 21,75s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 46	 18	 195	 0.71875	 0.19087137	 0.30163935
+B-TIMEX	 0	 0	 187	 0.0	 0.0	 0.0
+tp: 46 fp: 18 fn: 382 labels: 2
+Macro-average	 prec: 0.359375, rec: 0.09543569, f1: 0.15081967
+Micro-average	 prec: 0.71875, rec: 0.10747664, f1: 0.18699187
+
+
+Epoch 2/15 started, lr: 0.029850746, dataset size: 620
+
+
+Epoch 2/15 - 26,39s - loss: 318.3892 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,90s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 1	 1	 240	 0.5	 0.004149378	 0.008230453
+B-TIMEX	 0	 0	 187	 0.0	 0.0	 0.0
+tp: 1 fp: 1 fn: 427 labels: 2
+Macro-average	 prec: 0.25, rec: 0.002074689, f1: 0.0041152267
+Micro-average	 prec: 0.5, rec: 0.0023364485, f1: 0.004651163
+
+
+Epoch 3/15 started, lr: 0.02970297, dataset size: 620
+
+
+Epoch 3/15 - 26,09s - loss: 173.57161 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,76s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 35	 22	 206	 0.61403507	 0.14522822	 0.23489934
+B-TIMEX	 1	 1	 186	 0.5	 0.0053475937	 0.01058201
+tp: 36 fp: 23 fn: 392 labels: 2
+Macro-average	 prec: 0.55701756, rec: 0.07528791, f1: 0.13264692
+Micro-average	 prec: 0.6101695, rec: 0.08411215, f1: 0.14784394
+
+
+Epoch 4/15 started, lr: 0.02955665, dataset size: 620
+
+
+Epoch 4/15 - 25,80s - loss: 101.70594 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,68s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 29	 20	 212	 0.59183675	 0.12033195	 0.20000002
+B-TIMEX	 3	 3	 184	 0.5	 0.01604278	 0.031088082
+tp: 32 fp: 23 fn: 396 labels: 2
+Macro-average	 prec: 0.54591835, rec: 0.06818736, f1: 0.12123233
+Micro-average	 prec: 0.58181816, rec: 0.07476635, f1: 0.13250518
+
+
+Epoch 5/15 started, lr: 0.029411765, dataset size: 620
+
+
+Epoch 5/15 - 25,69s - loss: 78.83616 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,75s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 77	 19	 164	 0.8020833	 0.3195021	 0.45697328
+B-TIMEX	 14	 10	 173	 0.5833333	 0.07486631	 0.13270143
+tp: 91 fp: 29 fn: 337 labels: 2
+Macro-average	 prec: 0.6927083, rec: 0.1971842, f1: 0.30698344
+Micro-average	 prec: 0.7583333, rec: 0.21261682, f1: 0.3321168
+
+
+Epoch 6/15 started, lr: 0.029268293, dataset size: 620
+
+
+Epoch 6/15 - 25,73s - loss: 69.88438 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,51s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 50	 10	 191	 0.8333333	 0.20746888	 0.33222592
+B-TIMEX	 16	 19	 171	 0.45714286	 0.0855615	 0.14414415
+tp: 66 fp: 29 fn: 362 labels: 2
+Macro-average	 prec: 0.6452381, rec: 0.14651519, f1: 0.23880465
+Micro-average	 prec: 0.69473684, rec: 0.1542056, f1: 0.25239006
+
+
+Epoch 7/15 started, lr: 0.029126214, dataset size: 620
+
+
+Epoch 7/15 - 26,04s - loss: 63.981293 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,38s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 62	 5	 179	 0.92537314	 0.25726143	 0.40259743
+B-TIMEX	 39	 22	 148	 0.6393443	 0.20855615	 0.31451616
+tp: 101 fp: 27 fn: 327 labels: 2
+Macro-average	 prec: 0.7823587, rec: 0.23290879, f1: 0.35895607
+Micro-average	 prec: 0.7890625, rec: 0.23598132, f1: 0.36330935
+
+
+Epoch 8/15 started, lr: 0.028985508, dataset size: 620
+
+
+Epoch 8/15 - 25,49s - loss: 56.82674 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,31s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 66	 6	 175	 0.9166667	 0.27385893	 0.42172524
+B-TIMEX	 46	 57	 141	 0.44660193	 0.24598931	 0.31724137
+tp: 112 fp: 63 fn: 316 labels: 2
+Macro-average	 prec: 0.6816343, rec: 0.2599241, f1: 0.37634033
+Micro-average	 prec: 0.64, rec: 0.26168224, f1: 0.37147593
+
+
+Epoch 9/15 started, lr: 0.028846154, dataset size: 620
+
+
+Epoch 9/15 - 25,50s - loss: 48.866917 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,32s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 138	 18	 103	 0.88461536	 0.57261413	 0.69521415
+B-TIMEX	 100	 40	 87	 0.71428573	 0.53475934	 0.6116208
+tp: 238 fp: 58 fn: 190 labels: 2
+Macro-average	 prec: 0.7994505, rec: 0.55368674, f1: 0.6542502
+Micro-average	 prec: 0.8040541, rec: 0.55607474, f1: 0.65745854
+
+
+Epoch 10/15 started, lr: 0.028708134, dataset size: 620
+
+
+Epoch 10/15 - 25,38s - loss: 43.424793 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,29s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 152	 27	 89	 0.849162	 0.6307054	 0.7238095
+B-TIMEX	 104	 36	 83	 0.74285716	 0.5561497	 0.63608557
+tp: 256 fp: 63 fn: 172 labels: 2
+Macro-average	 prec: 0.79600954, rec: 0.59342754, f1: 0.6799502
+Micro-average	 prec: 0.8025078, rec: 0.5981308, f1: 0.6854083
+
+
+Epoch 11/15 started, lr: 0.028571429, dataset size: 620
+
+
+Epoch 11/15 - 25,41s - loss: 38.71221 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,34s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 159	 27	 82	 0.8548387	 0.65975106	 0.7447307
+B-TIMEX	 109	 32	 78	 0.77304965	 0.5828877	 0.66463417
+tp: 268 fp: 59 fn: 160 labels: 2
+Macro-average	 prec: 0.8139442, rec: 0.6213194, f1: 0.7047059
+Micro-average	 prec: 0.81957185, rec: 0.62616825, f1: 0.70993376
+
+
+Epoch 12/15 started, lr: 0.02843602, dataset size: 620
+
+
+Epoch 12/15 - 25,39s - loss: 37.099266 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,35s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 155	 27	 86	 0.85164833	 0.64315355	 0.7328605
+B-TIMEX	 107	 34	 80	 0.75886524	 0.5721925	 0.65243894
+tp: 262 fp: 61 fn: 166 labels: 2
+Macro-average	 prec: 0.8052568, rec: 0.60767305, f1: 0.6926499
+Micro-average	 prec: 0.8111455, rec: 0.61214954, f1: 0.6977363
+
+
+Epoch 13/15 started, lr: 0.028301887, dataset size: 620
+
+
+Epoch 13/15 - 25,37s - loss: 34.3481 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,34s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 155	 35	 86	 0.81578946	 0.64315355	 0.71925753
+B-TIMEX	 111	 35	 76	 0.760274	 0.59358287	 0.6666667
+tp: 266 fp: 70 fn: 162 labels: 2
+Macro-average	 prec: 0.7880317, rec: 0.6183682, f1: 0.6929661
+Micro-average	 prec: 0.7916667, rec: 0.6214953, f1: 0.6963351
+
+
+Epoch 14/15 started, lr: 0.028169012, dataset size: 620
+
+
+Epoch 14/15 - 25,46s - loss: 33.526573 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,35s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 160	 30	 81	 0.84210527	 0.66390043	 0.74245936
+B-TIMEX	 115	 30	 72	 0.79310346	 0.61497325	 0.6927711
+tp: 275 fp: 60 fn: 153 labels: 2
+Macro-average	 prec: 0.81760436, rec: 0.63943684, f1: 0.71762735
+Micro-average	 prec: 0.8208955, rec: 0.64252335, f1: 0.7208388
+
+
+Epoch 15/15 started, lr: 0.02803738, dataset size: 620
+
+
+Epoch 15/15 - 25,38s - loss: 33.667297 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 124
+time to finish evaluation: 20,31s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 159	 27	 82	 0.8548387	 0.65975106	 0.7447307
+B-TIMEX	 118	 30	 69	 0.7972973	 0.631016	 0.7044776
+tp: 277 fp: 57 fn: 151 labels: 2
+Macro-average	 prec: 0.82606804, rec: 0.64538354, f1: 0.7246324
+Micro-average	 prec: 0.8293413, rec: 0.64719623, f1: 0.72703415
+
+[2022-10-02 23:58:26,425] Training done.
+[2022-10-02 23:58:26,426] Best validation f1: 0.7270
+[2022-10-02 23:58:26,426] ----------------------------------------------------------------------------------------------------
+[2022-10-02 23:58:30,374] ----------------------------------------------------------------------------------------------------
+[2022-10-02 23:58:30,374] Start training for the following setup:
+[2022-10-02 23:58:30,374] 	model: sparknlp
+[2022-10-02 23:58:30,374] 	data: ['spanish_timebank']
+[2022-10-02 23:58:30,374] 	language: es
+[2022-10-02 23:58:30,374] 	n_epochs: 15
+[2022-10-02 23:58:30,374] 	dropout: 0.3
+[2022-10-02 23:58:30,374] 	batch_size: 64
+[2022-10-02 23:58:30,374] 	learning_rate: 0.01
+[2022-10-02 23:58:30,374] 	embeddings: glove_840B_300_xx
+[2022-10-02 23:58:30,375] 	models_path: /home/hugosousa/Projects/tei2go/models
+[2022-10-02 23:58:30,375] 	resources_path: /home/hugosousa/Projects/tei2go/resources
+[2022-10-02 23:58:30,375] 	logs_path: /home/hugosousa/Projects/tei2go/logs
+[2022-10-02 23:58:30,375] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-02 23:58:30,375] 	gpu: False
+[2022-10-02 23:58:30,375] Found preprocessed data.
+[2022-10-02 23:58:30,375] Starting spark session with GPU set to False.
+[2022-10-02 23:58:45,639] Initializing model for language es.
+[2022-10-02 23:58:45,639] Started train loop with id 20221002235845
+[2022-10-02 23:58:45,640] Building training pipeline.
+[2022-10-02 23:59:29,413] Initialize training.
+[2022-10-03 00:11:39,573] Train done.
+[2022-10-03 00:11:39,573] Storing NER weights.
+[2022-10-03 00:11:40,934] Retrieving metrics from sparknlp log file. 
+Notice that this metrics are computed on the BIO annotation and not on the tag identification level.
+[2022-10-03 00:11:40,936] Name of the selected graph: ner-dl/blstm_10_300_128_120.pb
+Training started - total epochs: 15 - lr: 0.01 - batch size: 64 - labels: 3 - chars: 90 - training examples: 610
+
+
+Epoch 1/15 started, lr: 0.01, dataset size: 610
+
+
+Epoch 1/15 - 32,08s - loss: 420.97406 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 21,44s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 33	 1	 227	 0.9705882	 0.12692308	 0.2244898
+B-TIMEX	 0	 0	 209	 0.0	 0.0	 0.0
+tp: 33 fp: 1 fn: 436 labels: 2
+Macro-average	 prec: 0.4852941, rec: 0.06346154, f1: 0.1122449
+Micro-average	 prec: 0.9705882, rec: 0.07036247, f1: 0.13121273
+
+
+Epoch 2/15 started, lr: 0.0099502485, dataset size: 610
+
+
+Epoch 2/15 - 26,31s - loss: 144.64102 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,92s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 86	 23	 174	 0.78899086	 0.33076924	 0.46612468
+B-TIMEX	 8	 2	 201	 0.8	 0.03827751	 0.07305936
+tp: 94 fp: 25 fn: 375 labels: 2
+Macro-average	 prec: 0.79449546, rec: 0.18452337, f1: 0.29948962
+Micro-average	 prec: 0.789916, rec: 0.20042644, f1: 0.3197279
+
+
+Epoch 3/15 started, lr: 0.00990099, dataset size: 610
+
+
+Epoch 3/15 - 25,72s - loss: 94.620544 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,58s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 133	 20	 127	 0.86928105	 0.51153845	 0.64406776
+B-TIMEX	 58	 23	 151	 0.7160494	 0.27751195	 0.39999998
+tp: 191 fp: 43 fn: 278 labels: 2
+Macro-average	 prec: 0.79266524, rec: 0.3945252, f1: 0.5268344
+Micro-average	 prec: 0.8162393, rec: 0.40724948, f1: 0.54338545
+
+
+Epoch 4/15 started, lr: 0.009852217, dataset size: 610
+
+
+Epoch 4/15 - 25,70s - loss: 77.20131 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,53s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 154	 46	 106	 0.77	 0.5923077	 0.6695652
+B-TIMEX	 44	 7	 165	 0.8627451	 0.21052632	 0.33846155
+tp: 198 fp: 53 fn: 271 labels: 2
+Macro-average	 prec: 0.8163725, rec: 0.40141702, f1: 0.5381978
+Micro-average	 prec: 0.78884465, rec: 0.42217484, f1: 0.55
+
+
+Epoch 5/15 started, lr: 0.009803922, dataset size: 610
+
+
+Epoch 5/15 - 25,63s - loss: 62.18165 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,50s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 153	 30	 107	 0.8360656	 0.5884615	 0.6907449
+B-TIMEX	 65	 13	 144	 0.8333333	 0.3110048	 0.45296165
+tp: 218 fp: 43 fn: 251 labels: 2
+Macro-average	 prec: 0.83469945, rec: 0.44973314, f1: 0.58452576
+Micro-average	 prec: 0.83524907, rec: 0.46481878, f1: 0.59726024
+
+
+Epoch 6/15 started, lr: 0.009756098, dataset size: 610
+
+
+Epoch 6/15 - 25,59s - loss: 49.11395 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,40s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 173	 23	 87	 0.88265306	 0.6653846	 0.75877196
+B-TIMEX	 122	 36	 87	 0.7721519	 0.58373207	 0.6648501
+tp: 295 fp: 59 fn: 174 labels: 2
+Macro-average	 prec: 0.8274025, rec: 0.6245583, f1: 0.7118114
+Micro-average	 prec: 0.8333333, rec: 0.62899786, f1: 0.7168894
+
+
+Epoch 7/15 started, lr: 0.009708738, dataset size: 610
+
+
+Epoch 7/15 - 25,55s - loss: 38.0038 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,43s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 199	 27	 61	 0.88053095	 0.7653846	 0.81893003
+B-TIMEX	 140	 19	 69	 0.8805031	 0.6698565	 0.76086956
+tp: 339 fp: 46 fn: 130 labels: 2
+Macro-average	 prec: 0.880517, rec: 0.71762055, f1: 0.79076684
+Micro-average	 prec: 0.8805195, rec: 0.7228145, f1: 0.79391104
+
+
+Epoch 8/15 started, lr: 0.009661836, dataset size: 610
+
+
+Epoch 8/15 - 26,07s - loss: 32.37425 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,23s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 216	 24	 44	 0.9	 0.83076924	 0.864
+B-TIMEX	 171	 35	 38	 0.8300971	 0.8181818	 0.8240963
+tp: 387 fp: 59 fn: 82 labels: 2
+Macro-average	 prec: 0.8650485, rec: 0.8244755, f1: 0.8442749
+Micro-average	 prec: 0.86771303, rec: 0.8251599, f1: 0.8459016
+
+
+Epoch 9/15 started, lr: 0.009615385, dataset size: 610
+
+
+Epoch 9/15 - 25,32s - loss: 27.99645 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,23s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 214	 23	 46	 0.90295357	 0.8230769	 0.861167
+B-TIMEX	 165	 25	 44	 0.8684211	 0.7894737	 0.8270677
+tp: 379 fp: 48 fn: 90 labels: 2
+Macro-average	 prec: 0.88568735, rec: 0.8062753, f1: 0.84411776
+Micro-average	 prec: 0.88758785, rec: 0.80810237, f1: 0.8459822
+
+
+Epoch 10/15 started, lr: 0.009569379, dataset size: 610
+
+
+Epoch 10/15 - 25,19s - loss: 25.08018 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,13s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 216	 16	 44	 0.9310345	 0.83076924	 0.8780488
+B-TIMEX	 175	 29	 34	 0.85784316	 0.83732057	 0.84745765
+tp: 391 fp: 45 fn: 78 labels: 2
+Macro-average	 prec: 0.89443886, rec: 0.83404493, f1: 0.8631868
+Micro-average	 prec: 0.896789, rec: 0.8336887, f1: 0.8640884
+
+
+Epoch 11/15 started, lr: 0.00952381, dataset size: 610
+
+
+Epoch 11/15 - 25,28s - loss: 22.305502 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,17s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 228	 30	 32	 0.88372093	 0.8769231	 0.8803089
+B-TIMEX	 181	 30	 28	 0.8578199	 0.8660287	 0.8619048
+tp: 409 fp: 60 fn: 60 labels: 2
+Macro-average	 prec: 0.87077045, rec: 0.87147593, f1: 0.8711231
+Micro-average	 prec: 0.8720682, rec: 0.8720682, f1: 0.8720682
+
+
+Epoch 12/15 started, lr: 0.009478673, dataset size: 610
+
+
+Epoch 12/15 - 25,30s - loss: 19.754248 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,22s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 234	 38	 26	 0.8602941	 0.9	 0.87969923
+B-TIMEX	 181	 29	 28	 0.86190474	 0.8660287	 0.8639619
+tp: 415 fp: 67 fn: 54 labels: 2
+Macro-average	 prec: 0.8610994, rec: 0.8830143, f1: 0.8719192
+Micro-average	 prec: 0.8609958, rec: 0.8848614, f1: 0.8727655
+
+
+Epoch 13/15 started, lr: 0.009433962, dataset size: 610
+
+
+Epoch 13/15 - 25,27s - loss: 18.747227 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,13s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 227	 22	 33	 0.9116466	 0.8730769	 0.891945
+B-TIMEX	 185	 27	 24	 0.8726415	 0.8851675	 0.8788599
+tp: 412 fp: 49 fn: 57 labels: 2
+Macro-average	 prec: 0.8921441, rec: 0.8791222, f1: 0.8855853
+Micro-average	 prec: 0.8937093, rec: 0.8784648, f1: 0.8860215
+
+
+Epoch 14/15 started, lr: 0.009389671, dataset size: 610
+
+
+Epoch 14/15 - 25,34s - loss: 17.133799 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,19s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 232	 25	 28	 0.9027237	 0.8923077	 0.89748555
+B-TIMEX	 188	 27	 21	 0.8744186	 0.8995215	 0.8867925
+tp: 420 fp: 52 fn: 49 labels: 2
+Macro-average	 prec: 0.88857114, rec: 0.8959146, f1: 0.8922277
+Micro-average	 prec: 0.8898305, rec: 0.8955224, f1: 0.8926674
+
+
+Epoch 15/15 started, lr: 0.009345794, dataset size: 610
+
+
+Epoch 15/15 - 25,23s - loss: 16.537317 - batches: 10
+Quality on validation dataset (20.0%), validation examples = 122
+time to finish evaluation: 20,18s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 235	 37	 25	 0.8639706	 0.90384614	 0.8834586
+B-TIMEX	 189	 29	 20	 0.8669725	 0.90430623	 0.8852459
+tp: 424 fp: 66 fn: 45 labels: 2
+Macro-average	 prec: 0.86547154, rec: 0.9040762, f1: 0.8843528
+Micro-average	 prec: 0.86530614, rec: 0.9040512, f1: 0.88425446
+
+[2022-10-03 00:11:40,936] Training done.
+[2022-10-03 00:11:40,936] Best validation f1: 0.8927
+[2022-10-03 00:11:40,936] ----------------------------------------------------------------------------------------------------
+[2022-10-03 00:11:46,812] ----------------------------------------------------------------------------------------------------
+[2022-10-03 00:11:46,812] Start training for the following setup:
+[2022-10-03 00:11:46,813] 	model: sparknlp
+[2022-10-03 00:11:46,813] 	data: ['spanish_timebank']
+[2022-10-03 00:11:46,813] 	language: es
+[2022-10-03 00:11:46,813] 	n_epochs: 15
+[2022-10-03 00:11:46,813] 	dropout: 0.3
+[2022-10-03 00:11:46,813] 	batch_size: 4
+[2022-10-03 00:11:46,813] 	learning_rate: 0.05
+[2022-10-03 00:11:46,813] 	embeddings: glove_840B_300_xx
+[2022-10-03 00:11:46,813] 	models_path: /home/hugosousa/Projects/tei2go/models
+[2022-10-03 00:11:46,813] 	resources_path: /home/hugosousa/Projects/tei2go/resources
+[2022-10-03 00:11:46,813] 	logs_path: /home/hugosousa/Projects/tei2go/logs
+[2022-10-03 00:11:46,813] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-03 00:11:46,813] 	gpu: False
+[2022-10-03 00:11:46,814] Found preprocessed data.
+[2022-10-03 00:11:46,814] Starting spark session with GPU set to False.
+[2022-10-03 00:12:00,660] Initializing model for language es.
+[2022-10-03 00:12:00,661] Started train loop with id 20221003001200
+[2022-10-03 00:12:00,661] Building training pipeline.
+[2022-10-03 00:12:17,522] Initialize training.
+[2022-10-03 00:27:11,501] Train done.
+[2022-10-03 00:27:11,502] Storing NER weights.
+[2022-10-03 00:27:12,851] Retrieving metrics from sparknlp log file. 
+Notice that this metrics are computed on the BIO annotation and not on the tag identification level.
+[2022-10-03 00:27:12,852] Name of the selected graph: ner-dl/blstm_10_300_128_120.pb
+Training started - total epochs: 15 - lr: 0.05 - batch size: 4 - labels: 3 - chars: 90 - training examples: 606
+
+
+Epoch 1/15 started, lr: 0.05, dataset size: 606
+
+
+Epoch 1/15 - 39,23s - loss: 7442.8945 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 21,40s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 262	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 210	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 472 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 2/15 started, lr: 0.049751244, dataset size: 606
+
+
+Epoch 2/15 - 37,37s - loss: 4479.293 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,90s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 262	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 210	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 472 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 3/15 started, lr: 0.04950495, dataset size: 606
+
+
+Epoch 3/15 - 37,04s - loss: 3835.3193 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,78s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 262	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 210	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 472 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 4/15 started, lr: 0.049261086, dataset size: 606
+
+
+Epoch 4/15 - 37,06s - loss: 2990.6543 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,69s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 2	 2	 260	 0.5	 0.007633588	 0.015037594
+B-TIMEX	 3	 19	 207	 0.13636364	 0.014285714	 0.025862068
+tp: 5 fp: 21 fn: 467 labels: 2
+Macro-average	 prec: 0.3181818, rec: 0.010959651, f1: 0.02118944
+Micro-average	 prec: 0.1923077, rec: 0.010593221, f1: 0.02008032
+
+
+Epoch 5/15 started, lr: 0.04901961, dataset size: 606
+
+
+Epoch 5/15 - 36,97s - loss: 3408.4927 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,70s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 31	 3	 231	 0.9117647	 0.118320614	 0.20945945
+B-TIMEX	 10	 9	 200	 0.5263158	 0.04761905	 0.08733625
+tp: 41 fp: 12 fn: 431 labels: 2
+Macro-average	 prec: 0.7190403, rec: 0.08296983, f1: 0.1487728
+Micro-average	 prec: 0.7735849, rec: 0.086864404, f1: 0.15619048
+
+
+Epoch 6/15 started, lr: 0.04878049, dataset size: 606
+
+
+Epoch 6/15 - 36,95s - loss: 3707.2598 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,66s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 3	 1	 259	 0.75	 0.011450382	 0.022556392
+B-TIMEX	 1	 2	 209	 0.33333334	 0.004761905	 0.0093896715
+tp: 4 fp: 3 fn: 468 labels: 2
+Macro-average	 prec: 0.5416667, rec: 0.008106143, f1: 0.015973244
+Micro-average	 prec: 0.5714286, rec: 0.008474576, f1: 0.016701462
+
+
+Epoch 7/15 started, lr: 0.04854369, dataset size: 606
+
+
+Epoch 7/15 - 37,40s - loss: 5930.5264 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,38s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 262	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 210	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 472 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 8/15 started, lr: 0.04830918, dataset size: 606
+
+
+Epoch 8/15 - 36,67s - loss: 6216.7114 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,36s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 262	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 210	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 472 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 9/15 started, lr: 0.048076924, dataset size: 606
+
+
+Epoch 9/15 - 36,55s - loss: 4913.751 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,31s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 2	 4	 260	 0.33333334	 0.007633588	 0.014925373
+B-TIMEX	 1	 4	 209	 0.2	 0.004761905	 0.009302326
+tp: 3 fp: 8 fn: 469 labels: 2
+Macro-average	 prec: 0.26666668, rec: 0.0061977464, f1: 0.012113946
+Micro-average	 prec: 0.27272728, rec: 0.006355932, f1: 0.01242236
+
+
+Epoch 10/15 started, lr: 0.04784689, dataset size: 606
+
+
+Epoch 10/15 - 36,63s - loss: 7922.9297 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,43s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 5	 5	 257	 0.5	 0.01908397	 0.036764704
+B-TIMEX	 2	 4	 208	 0.33333334	 0.00952381	 0.01851852
+tp: 7 fp: 9 fn: 465 labels: 2
+Macro-average	 prec: 0.4166667, rec: 0.014303889, f1: 0.027658287
+Micro-average	 prec: 0.4375, rec: 0.014830508, f1: 0.028688526
+
+
+Epoch 11/15 started, lr: 0.047619052, dataset size: 606
+
+
+Epoch 11/15 - 36,55s - loss: 5119.2334 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,34s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 262	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 210	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 472 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 12/15 started, lr: 0.047393367, dataset size: 606
+
+
+Epoch 12/15 - 36,49s - loss: 5311.8784 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,33s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 22	 71	 240	 0.23655914	 0.08396947	 0.12394367
+B-TIMEX	 2	 15	 208	 0.11764706	 0.00952381	 0.017621145
+tp: 24 fp: 86 fn: 448 labels: 2
+Macro-average	 prec: 0.1771031, rec: 0.046746638, f1: 0.07396903
+Micro-average	 prec: 0.21818182, rec: 0.050847456, f1: 0.082474224
+
+
+Epoch 13/15 started, lr: 0.047169816, dataset size: 606
+
+
+Epoch 13/15 - 36,48s - loss: 5334.3467 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,28s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 30	 19	 232	 0.6122449	 0.114503816	 0.19292603
+B-TIMEX	 4	 6	 206	 0.4	 0.01904762	 0.03636364
+tp: 34 fp: 25 fn: 438 labels: 2
+Macro-average	 prec: 0.50612247, rec: 0.06677572, f1: 0.11798497
+Micro-average	 prec: 0.5762712, rec: 0.0720339, f1: 0.12806027
+
+
+Epoch 14/15 started, lr: 0.046948355, dataset size: 606
+
+
+Epoch 14/15 - 36,56s - loss: 5392.9805 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,30s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 5	 34	 257	 0.12820514	 0.01908397	 0.033222593
+B-TIMEX	 0	 10	 210	 0.0	 0.0	 0.0
+tp: 5 fp: 44 fn: 467 labels: 2
+Macro-average	 prec: 0.06410257, rec: 0.009541985, f1: 0.016611297
+Micro-average	 prec: 0.10204082, rec: 0.010593221, f1: 0.01919386
+
+
+Epoch 15/15 started, lr: 0.04672897, dataset size: 606
+
+
+Epoch 15/15 - 36,55s - loss: 8575.392 - batches: 152
+Quality on validation dataset (20.0%), validation examples = 121
+time to finish evaluation: 20,32s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 7	 8	 255	 0.46666667	 0.026717557	 0.050541516
+B-TIMEX	 4	 7	 206	 0.36363637	 0.01904762	 0.036199097
+tp: 11 fp: 15 fn: 461 labels: 2
+Macro-average	 prec: 0.41515154, rec: 0.022882588, f1: 0.043374438
+Micro-average	 prec: 0.42307693, rec: 0.023305085, f1: 0.044176705
+
+[2022-10-03 00:27:12,852] Training done.
+[2022-10-03 00:27:12,853] Best validation f1: 0.1562
+[2022-10-03 00:27:12,853] ----------------------------------------------------------------------------------------------------

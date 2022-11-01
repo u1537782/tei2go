@@ -1,0 +1,675 @@
+[2022-09-28 22:10:17,375] ----------------------------------------------------------------------------------------------------
+[2022-09-28 22:10:17,375] Start training for the following setup:
+[2022-09-28 22:10:17,375] 	model: sparknlp
+[2022-09-28 22:10:17,375] 	data: ['tempeval_2_italian', 'ancient_time_italian', 'meantime_italian', 'narrative_container', 'ph_italian']
+[2022-09-28 22:10:17,375] 	language: it
+[2022-09-28 22:10:17,375] 	n_epochs: 15
+[2022-09-28 22:10:17,375] 	dropout: 0.2
+[2022-09-28 22:10:17,375] 	batch_size: 64
+[2022-09-28 22:10:17,375] 	learning_rate: 0.1
+[2022-09-28 22:10:17,375] 	embeddings: glove_840B_300_xx
+[2022-09-28 22:10:52,467] Building annotation model.
+[2022-09-28 22:10:56,140] Annotating documents.
+[2022-09-28 22:11:05,842] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:11:10,059] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:11:17,580] The number of labeled timexs (4) does not match the number of original timexs (6).
+[2022-09-28 22:11:17,834] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:11:17,915] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:11:18,348] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:11:20,988] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:11:21,795] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:11:22,117] The number of labeled timexs (8) does not match the number of original timexs (10).
+[2022-09-28 22:11:22,190] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:11:22,462] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:11:23,035] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:11:23,579] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:11:23,898] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:11:24,894] The number of labeled timexs (2) does not match the number of original timexs (4).
+[2022-09-28 22:11:27,644] The number of labeled timexs (1) does not match the number of original timexs (4).
+[2022-09-28 22:11:57,083] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:12:07,626] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:12:09,536] The number of labeled timexs (4) does not match the number of original timexs (5).
+[2022-09-28 22:12:16,835] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:12:26,223] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:12:27,563] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:12:37,949] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:12:38,041] The number of labeled timexs (3) does not match the number of original timexs (5).
+[2022-09-28 22:12:45,379] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:12:46,417] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:12:47,410] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:12:49,806] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:12:58,560] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:13:07,164] The number of labeled timexs (9) does not match the number of original timexs (11).
+[2022-09-28 22:13:27,445] The number of labeled timexs (5) does not match the number of original timexs (6).
+[2022-09-28 22:13:31,849] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:13:32,014] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:13:34,629] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:13:38,685] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:13:39,853] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:13:45,935] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:14:06,572] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:14:07,858] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:14:09,194] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:14:10,090] The number of labeled timexs (1) does not match the number of original timexs (3).
+[2022-09-28 22:14:10,934] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:14:12,688] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:14:32,737] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:14:34,934] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:14:38,169] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:14:40,697] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:14:46,801] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:14:50,246] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:14:51,069] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:14:53,538] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:14:53,869] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:14:54,332] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:14:54,661] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:14:56,799] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:14:57,734] The number of labeled timexs (4) does not match the number of original timexs (5).
+[2022-09-28 22:15:04,982] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:15:07,811] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:15:17,289] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:15:25,440] The number of labeled timexs (4) does not match the number of original timexs (5).
+[2022-09-28 22:15:32,344] The number of labeled timexs (4) does not match the number of original timexs (5).
+[2022-09-28 22:15:40,782] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:15:56,041] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:16:03,542] The number of labeled timexs (4) does not match the number of original timexs (7).
+[2022-09-28 22:16:16,054] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:16:16,182] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:16:16,242] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:16:19,314] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:16:22,517] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:16:33,810] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:16:34,041] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:16:38,197] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:16:38,403] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:16:38,471] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:16:39,810] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:16:40,002] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:16:53,077] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:16:54,632] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:16:54,695] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:16:57,870] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:16:59,753] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:17:00,450] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:17:09,299] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:17:10,146] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:17:16,404] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:17:16,933] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:17:28,150] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:17:28,925] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:17:30,702] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:17:35,135] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:17:43,155] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:17:44,069] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:17:49,072] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:17:50,118] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:17:58,254] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:17:59,827] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:18:18,583] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:18:46,674] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:18:47,354] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:18:48,488] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:18:48,553] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:18:50,066] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:18:52,556] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:18:54,996] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:19:01,568] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:19:08,575] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:19:34,807] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:19:36,969] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:19:38,065] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:19:38,139] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:19:55,156] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:20:02,539] The number of labeled timexs (5) does not match the number of original timexs (7).
+[2022-09-28 22:20:02,653] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:20:06,157] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:20:08,761] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:20:10,362] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:20:13,747] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:20:20,871] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:20:21,163] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:20:21,507] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:20:28,762] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:20:28,974] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:20:31,225] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:20:34,007] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:20:47,413] The number of labeled timexs (6) does not match the number of original timexs (7).
+[2022-09-28 22:20:49,479] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:20:49,595] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:20:50,084] The number of labeled timexs (2) does not match the number of original timexs (4).
+[2022-09-28 22:20:57,363] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:21:04,935] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:21:05,727] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:21:22,611] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:21:30,973] The number of labeled timexs (4) does not match the number of original timexs (5).
+[2022-09-28 22:21:31,164] The number of labeled timexs (4) does not match the number of original timexs (6).
+[2022-09-28 22:21:32,427] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:21:36,396] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:21:42,934] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:21:49,561] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:22:02,911] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:22:03,039] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:22:08,514] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:22:14,165] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:22:16,370] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:22:16,758] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:22:17,020] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:22:17,630] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:22:22,906] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:22:25,258] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:22:31,586] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:22:33,403] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:22:33,617] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:22:39,168] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:22:56,034] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:22:57,609] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:23:02,523] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:23:07,271] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:23:07,414] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:23:19,817] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:23:21,225] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:23:58,504] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:24:01,507] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:24:04,392] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:24:05,114] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:24:05,185] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:24:05,250] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:24:17,954] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:24:33,251] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:24:33,911] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:24:34,156] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:24:38,963] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:24:40,097] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:25:07,561] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:25:22,708] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:25:32,014] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:25:43,824] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:25:47,035] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:25:58,232] The number of labeled timexs (4) does not match the number of original timexs (6).
+[2022-09-28 22:25:59,226] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:26:15,277] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:26:20,097] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:26:40,391] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:26:41,834] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:26:48,452] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:26:52,585] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:26:54,548] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:26:55,496] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:26:55,560] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:26:56,082] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:26:56,143] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:26:56,202] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:26:58,168] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:26:58,740] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:26:58,848] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:27:06,133] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:27:06,257] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:27:12,853] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:27:16,122] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:27:16,267] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:27:27,245] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:27:31,923] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:27:36,834] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:27:42,458] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:27:42,706] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:27:55,518] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:27:59,076] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:28:04,849] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:28:04,911] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:28:04,976] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:28:05,223] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:28:06,029] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:28:08,125] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:28:08,381] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:28:15,961] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:28:17,758] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:28:28,355] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:28:36,828] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:28:58,450] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:29:01,121] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:29:07,507] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:29:08,066] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:29:10,636] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:29:14,808] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:29:20,311] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:29:21,531] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:29:21,749] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:29:23,462] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:29:27,639] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:29:33,931] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:29:34,171] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:29:42,920] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:29:44,786] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:29:52,433] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:29:56,534] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:29:57,506] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:29:58,962] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:30:03,395] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:30:14,968] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:30:15,656] The number of labeled timexs (4) does not match the number of original timexs (5).
+[2022-09-28 22:30:23,764] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:30:25,803] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:30:43,152] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:30:43,217] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:30:49,190] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:30:49,901] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:30:50,062] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:30:50,197] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:30:50,974] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:30:55,076] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:30:56,459] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:30:58,012] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:30:59,028] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:31:03,742] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:31:06,522] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:31:08,608] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:31:13,657] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:31:18,549] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:31:18,685] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:31:28,247] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:31:28,667] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:31:29,098] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:31:30,355] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:31:40,103] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:31:40,166] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:31:40,361] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:31:40,506] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:31:40,995] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:31:43,552] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:31:47,557] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:31:48,521] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:31:48,947] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:32:06,002] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:32:16,411] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:32:38,817] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:32:44,491] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:32:44,842] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:32:48,115] The number of labeled timexs (3) does not match the number of original timexs (5).
+[2022-09-28 22:32:48,560] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:32:48,789] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:32:49,945] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:32:53,424] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:32:57,835] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:33:02,534] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:33:15,786] The number of labeled timexs (0) does not match the number of original timexs (2).
+[2022-09-28 22:33:23,198] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:33:25,669] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:33:34,808] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:33:36,503] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:33:39,327] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:33:45,728] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:33:50,665] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:33:51,548] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:34:02,788] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:34:03,177] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:34:08,892] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:34:11,242] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:34:16,146] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:34:16,207] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:34:24,984] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:34:38,953] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:34:45,858] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:34:53,378] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:34:54,439] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:34:57,691] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:34:57,756] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:34:57,819] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:34:59,201] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:34:59,467] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:35:03,093] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:35:07,115] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:35:07,195] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:35:12,380] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:35:15,122] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:35:23,561] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:35:25,076] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:35:27,613] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:35:35,800] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:35:44,895] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:35:53,166] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:35:56,555] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:35:57,007] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:35:57,162] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:35:58,775] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:36:01,333] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:36:05,959] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:36:14,816] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:36:23,615] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:36:23,858] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:36:24,108] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:36:29,258] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:36:29,588] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:36:31,062] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:36:32,589] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:36:33,638] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:36:35,673] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:36:35,746] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:36:38,410] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:36:43,490] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:36:45,110] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:36:46,029] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:36:51,804] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:36:51,870] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:37:02,691] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:37:08,572] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:37:10,781] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:37:15,119] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:37:15,189] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:37:18,292] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:37:18,697] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:37:24,360] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:37:31,014] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:37:37,168] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:37:40,885] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:37:41,202] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:37:42,018] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:37:43,850] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:37:46,936] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:37:49,925] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:38:06,801] The number of labeled timexs (5) does not match the number of original timexs (6).
+[2022-09-28 22:38:07,882] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:38:14,729] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:38:14,795] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:38:25,487] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:38:25,870] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:38:29,194] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:38:29,993] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:38:32,377] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:38:32,896] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:38:34,445] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:38:36,535] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:38:40,124] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:38:57,874] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:38:58,259] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:39:06,893] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:39:07,033] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:39:08,590] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:39:09,264] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:39:09,747] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:39:24,998] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:39:25,614] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:39:33,095] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:39:38,895] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:39:57,994] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:39:59,683] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:40:03,232] The number of labeled timexs (4) does not match the number of original timexs (5).
+[2022-09-28 22:40:03,458] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:40:04,013] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:40:16,732] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:40:18,116] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:40:26,806] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:40:30,613] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:40:33,624] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:40:35,500] The number of labeled timexs (5) does not match the number of original timexs (6).
+[2022-09-28 22:40:35,871] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:40:53,510] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:40:54,760] The number of labeled timexs (18) does not match the number of original timexs (19).
+[2022-09-28 22:41:07,875] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:41:19,252] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:41:25,726] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:41:27,815] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:41:29,960] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:41:35,659] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:41:42,828] The number of labeled timexs (3) does not match the number of original timexs (5).
+[2022-09-28 22:41:51,426] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:41:56,497] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:41:56,953] The number of labeled timexs (4) does not match the number of original timexs (5).
+[2022-09-28 22:42:03,635] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:42:05,582] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:42:18,513] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:42:23,235] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:42:23,287] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:42:23,415] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:42:26,239] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:42:26,319] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:42:30,314] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:42:30,486] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:42:36,649] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:42:37,039] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:42:41,217] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:42:52,753] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:43:11,180] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:43:15,721] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:43:16,120] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:43:16,507] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:43:17,588] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:43:26,061] The number of labeled timexs (3) does not match the number of original timexs (5).
+[2022-09-28 22:43:26,188] The number of labeled timexs (4) does not match the number of original timexs (8).
+[2022-09-28 22:43:26,249] The number of labeled timexs (3) does not match the number of original timexs (5).
+[2022-09-28 22:43:26,309] The number of labeled timexs (3) does not match the number of original timexs (5).
+[2022-09-28 22:43:37,768] The number of labeled timexs (3) does not match the number of original timexs (4).
+[2022-09-28 22:43:43,600] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:43:52,210] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:44:01,272] The number of labeled timexs (4) does not match the number of original timexs (6).
+[2022-09-28 22:44:08,659] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:44:11,675] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:44:13,083] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:44:14,042] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:44:18,495] The number of labeled timexs (1) does not match the number of original timexs (2).
+[2022-09-28 22:44:21,799] The number of labeled timexs (0) does not match the number of original timexs (1).
+[2022-09-28 22:44:34,393] The number of labeled timexs (2) does not match the number of original timexs (3).
+[2022-09-28 22:44:42,612] Initializing model for language it.
+[2022-09-28 22:44:42,613] Started train loop with id 20220928224442
+[2022-09-28 22:44:42,613] Building training pipeline.
+[2022-09-28 22:44:47,174] Initialize training.
+[2022-09-29 02:08:47,463] Train done.
+[2022-09-29 02:08:47,463] Storing NER weights.
+[2022-09-29 02:08:49,925] Retrieving metrics from sparknlp log file. 
+Notice that this metrics are computed on the BIO annotation and not on the tag identification level.
+[2022-09-29 02:08:49,925] Name of the selected graph: ner-dl/blstm_38_300_128_200.pb
+Training started - total epochs: 15 - lr: 0.1 - batch size: 64 - labels: 3 - chars: 129 - training examples: 23567
+
+
+Epoch 1/15 started, lr: 0.1, dataset size: 23567
+
+
+Epoch 1/15 - 579.89s - loss: 8217.324 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 216.42s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 2/15 started, lr: 0.09950249, dataset size: 23567
+
+
+Epoch 2/15 - 581.25s - loss: 4508.066 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 217.03s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 3/15 started, lr: 0.0990099, dataset size: 23567
+
+
+Epoch 3/15 - 578.21s - loss: 3826.7056 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 217.12s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 1	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 1 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 4/15 started, lr: 0.09852217, dataset size: 23567
+
+
+Epoch 4/15 - 579.64s - loss: 4090.743 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 222.86s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 5/15 started, lr: 0.09803922, dataset size: 23567
+
+
+Epoch 5/15 - 576.41s - loss: 3864.5447 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 219.33s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 6/15 started, lr: 0.09756098, dataset size: 23567
+
+
+Epoch 6/15 - 582.14s - loss: 3891.1702 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 221.39s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 7/15 started, lr: 0.09708738, dataset size: 23567
+
+
+Epoch 7/15 - 578.64s - loss: 3661.5007 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 218.94s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 8/15 started, lr: 0.09661836, dataset size: 23567
+
+
+Epoch 8/15 - 577.12s - loss: 4002.1287 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 218.68s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 9/15 started, lr: 0.09615385, dataset size: 23567
+
+
+Epoch 9/15 - 582.49s - loss: 3646.3462 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 224.08s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 10/15 started, lr: 0.09569378, dataset size: 23567
+
+
+Epoch 10/15 - 576.87s - loss: 3549.3691 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 217.39s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 11/15 started, lr: 0.095238104, dataset size: 23567
+
+
+Epoch 11/15 - 573.81s - loss: 3261.6057 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 221.42s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 12/15 started, lr: 0.09478673, dataset size: 23567
+
+
+Epoch 12/15 - 579.36s - loss: 3317.4539 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 220.00s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 13/15 started, lr: 0.09433963, dataset size: 23567
+
+
+Epoch 13/15 - 574.74s - loss: 3364.6511 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 218.53s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 14/15 started, lr: 0.09389671, dataset size: 23567
+
+
+Epoch 14/15 - 580.31s - loss: 3138.2385 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 221.56s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 15/15 started, lr: 0.09345794, dataset size: 23567
+
+
+Epoch 15/15 - 577.70s - loss: 3059.5818 - batches: 369
+Quality on validation dataset (20.0%), validation examples = 4713
+time to finish evaluation: 222.98s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+I-TIMEX	 0	 0	 6623	 0.0	 0.0	 0.0
+B-TIMEX	 0	 0	 8109	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 14732 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+[2022-09-29 02:08:50,043] Training done.
+[2022-09-29 02:08:50,043] Best validation f1: 0.0000
+[2022-09-29 02:08:50,043] ----------------------------------------------------------------------------------------------------
