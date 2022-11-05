@@ -8,10 +8,10 @@
 [2022-10-03 05:42:25,861] 	batch_size: 64
 [2022-10-03 05:42:25,861] 	learning_rate: 0.1
 [2022-10-03 05:42:25,861] 	embeddings: glove_840B_300_xx
-[2022-10-03 05:42:25,861] 	models_path: /home/hugosousa/Projects/tei2go/models
-[2022-10-03 05:42:25,861] 	resources_path: /home/hugosousa/Projects/tei2go/resources
-[2022-10-03 05:42:25,861] 	logs_path: /home/hugosousa/Projects/tei2go/logs
-[2022-10-03 05:42:25,861] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-03 05:42:25,861] 	models_path: /tei2go/models
+[2022-10-03 05:42:25,861] 	resources_path: /tei2go/resources
+[2022-10-03 05:42:25,861] 	logs_path: /tei2go/logs
+[2022-10-03 05:42:25,861] 	data_path: /tei2go/data
 [2022-10-03 05:42:25,861] 	gpu: False
 [2022-10-03 05:42:25,862] Found preprocessed data.
 [2022-10-03 05:42:25,862] Starting spark session with GPU set to False.
@@ -249,10 +249,10 @@ Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
 [2022-10-03 05:59:43,706] 	batch_size: 8
 [2022-10-03 05:59:43,706] 	learning_rate: 0.003
 [2022-10-03 05:59:43,706] 	embeddings: glove_840B_300_xx
-[2022-10-03 05:59:43,706] 	models_path: /home/hugosousa/Projects/tei2go/models
-[2022-10-03 05:59:43,706] 	resources_path: /home/hugosousa/Projects/tei2go/resources
-[2022-10-03 05:59:43,706] 	logs_path: /home/hugosousa/Projects/tei2go/logs
-[2022-10-03 05:59:43,706] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-03 05:59:43,706] 	models_path: /tei2go/models
+[2022-10-03 05:59:43,706] 	resources_path: /tei2go/resources
+[2022-10-03 05:59:43,706] 	logs_path: /tei2go/logs
+[2022-10-03 05:59:43,706] 	data_path: /tei2go/data
 [2022-10-03 05:59:43,706] 	gpu: False
 [2022-10-03 05:59:43,706] Found preprocessed data.
 [2022-10-03 05:59:43,706] Starting spark session with GPU set to False.
@@ -490,10 +490,10 @@ Micro-average	 prec: 0.8113772, rec: 0.70207256, f1: 0.7527778
 [2022-10-03 06:16:27,735] 	batch_size: 64
 [2022-10-03 06:16:27,735] 	learning_rate: 0.03
 [2022-10-03 06:16:27,735] 	embeddings: glove_840B_300_xx
-[2022-10-03 06:16:27,735] 	models_path: /home/hugosousa/Projects/tei2go/models
-[2022-10-03 06:16:27,735] 	resources_path: /home/hugosousa/Projects/tei2go/resources
-[2022-10-03 06:16:27,735] 	logs_path: /home/hugosousa/Projects/tei2go/logs
-[2022-10-03 06:16:27,735] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-03 06:16:27,735] 	models_path: /tei2go/models
+[2022-10-03 06:16:27,735] 	resources_path: /tei2go/resources
+[2022-10-03 06:16:27,735] 	logs_path: /tei2go/logs
+[2022-10-03 06:16:27,735] 	data_path: /tei2go/data
 [2022-10-03 06:16:27,735] 	gpu: False
 [2022-10-03 06:16:27,735] Found preprocessed data.
 [2022-10-03 06:16:27,735] Starting spark session with GPU set to False.
@@ -731,10 +731,10 @@ Micro-average	 prec: 0.73493975, rec: 0.5020576, f1: 0.59657705
 [2022-10-03 06:32:49,321] 	batch_size: 32
 [2022-10-03 06:32:49,321] 	learning_rate: 0.01
 [2022-10-03 06:32:49,321] 	embeddings: glove_840B_300_xx
-[2022-10-03 06:32:49,321] 	models_path: /home/hugosousa/Projects/tei2go/models
-[2022-10-03 06:32:49,321] 	resources_path: /home/hugosousa/Projects/tei2go/resources
-[2022-10-03 06:32:49,321] 	logs_path: /home/hugosousa/Projects/tei2go/logs
-[2022-10-03 06:32:49,321] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-03 06:32:49,321] 	models_path: /tei2go/models
+[2022-10-03 06:32:49,321] 	resources_path: /tei2go/resources
+[2022-10-03 06:32:49,321] 	logs_path: /tei2go/logs
+[2022-10-03 06:32:49,321] 	data_path: /tei2go/data
 [2022-10-03 06:32:49,321] 	gpu: False
 [2022-10-03 06:32:49,321] Found preprocessed data.
 [2022-10-03 06:32:49,321] Starting spark session with GPU set to False.
@@ -972,10 +972,10 @@ Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
 [2022-10-03 06:49:18,135] 	batch_size: 8
 [2022-10-03 06:49:18,136] 	learning_rate: 0.003
 [2022-10-03 06:49:18,136] 	embeddings: glove_840B_300_xx
-[2022-10-03 06:49:18,136] 	models_path: /home/hugosousa/Projects/tei2go/models
-[2022-10-03 06:49:18,136] 	resources_path: /home/hugosousa/Projects/tei2go/resources
-[2022-10-03 06:49:18,136] 	logs_path: /home/hugosousa/Projects/tei2go/logs
-[2022-10-03 06:49:18,136] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-03 06:49:18,136] 	models_path: /tei2go/models
+[2022-10-03 06:49:18,136] 	resources_path: /tei2go/resources
+[2022-10-03 06:49:18,136] 	logs_path: /tei2go/logs
+[2022-10-03 06:49:18,136] 	data_path: /tei2go/data
 [2022-10-03 06:49:18,137] 	gpu: False
 [2022-10-03 06:49:18,137] Found preprocessed data.
 [2022-10-03 06:49:18,137] Starting spark session with GPU set to False.
@@ -1213,10 +1213,10 @@ Micro-average	 prec: 0.74472576, rec: 0.7463002, f1: 0.7455122
 [2022-10-03 07:05:33,811] 	batch_size: 4
 [2022-10-03 07:05:33,811] 	learning_rate: 0.1
 [2022-10-03 07:05:33,811] 	embeddings: glove_840B_300_xx
-[2022-10-03 07:05:33,811] 	models_path: /home/hugosousa/Projects/tei2go/models
-[2022-10-03 07:05:33,811] 	resources_path: /home/hugosousa/Projects/tei2go/resources
-[2022-10-03 07:05:33,811] 	logs_path: /home/hugosousa/Projects/tei2go/logs
-[2022-10-03 07:05:33,811] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-03 07:05:33,811] 	models_path: /tei2go/models
+[2022-10-03 07:05:33,811] 	resources_path: /tei2go/resources
+[2022-10-03 07:05:33,811] 	logs_path: /tei2go/logs
+[2022-10-03 07:05:33,811] 	data_path: /tei2go/data
 [2022-10-03 07:05:33,811] 	gpu: False
 [2022-10-03 07:05:33,811] Found preprocessed data.
 [2022-10-03 07:05:33,812] Starting spark session with GPU set to False.
@@ -1454,10 +1454,10 @@ Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
 [2022-10-03 07:25:26,807] 	batch_size: 4
 [2022-10-03 07:25:26,807] 	learning_rate: 0.01
 [2022-10-03 07:25:26,807] 	embeddings: glove_840B_300_xx
-[2022-10-03 07:25:26,807] 	models_path: /home/hugosousa/Projects/tei2go/models
-[2022-10-03 07:25:26,807] 	resources_path: /home/hugosousa/Projects/tei2go/resources
-[2022-10-03 07:25:26,807] 	logs_path: /home/hugosousa/Projects/tei2go/logs
-[2022-10-03 07:25:26,807] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-03 07:25:26,807] 	models_path: /tei2go/models
+[2022-10-03 07:25:26,807] 	resources_path: /tei2go/resources
+[2022-10-03 07:25:26,807] 	logs_path: /tei2go/logs
+[2022-10-03 07:25:26,807] 	data_path: /tei2go/data
 [2022-10-03 07:25:26,807] 	gpu: False
 [2022-10-03 07:25:26,808] Found preprocessed data.
 [2022-10-03 07:25:26,808] Starting spark session with GPU set to False.
@@ -1695,10 +1695,10 @@ Micro-average	 prec: 0.6969697, rec: 0.122994654, f1: 0.20909092
 [2022-10-03 07:45:23,086] 	batch_size: 64
 [2022-10-03 07:45:23,086] 	learning_rate: 0.03
 [2022-10-03 07:45:23,086] 	embeddings: glove_840B_300_xx
-[2022-10-03 07:45:23,086] 	models_path: /home/hugosousa/Projects/tei2go/models
-[2022-10-03 07:45:23,086] 	resources_path: /home/hugosousa/Projects/tei2go/resources
-[2022-10-03 07:45:23,086] 	logs_path: /home/hugosousa/Projects/tei2go/logs
-[2022-10-03 07:45:23,086] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-03 07:45:23,086] 	models_path: /tei2go/models
+[2022-10-03 07:45:23,086] 	resources_path: /tei2go/resources
+[2022-10-03 07:45:23,086] 	logs_path: /tei2go/logs
+[2022-10-03 07:45:23,086] 	data_path: /tei2go/data
 [2022-10-03 07:45:23,087] 	gpu: False
 [2022-10-03 07:45:23,087] Found preprocessed data.
 [2022-10-03 07:45:23,087] Starting spark session with GPU set to False.
@@ -1936,10 +1936,10 @@ Micro-average	 prec: 0.69529086, rec: 0.6048193, f1: 0.64690727
 [2022-10-03 08:02:09,166] 	batch_size: 64
 [2022-10-03 08:02:09,166] 	learning_rate: 0.01
 [2022-10-03 08:02:09,166] 	embeddings: glove_840B_300_xx
-[2022-10-03 08:02:09,166] 	models_path: /home/hugosousa/Projects/tei2go/models
-[2022-10-03 08:02:09,166] 	resources_path: /home/hugosousa/Projects/tei2go/resources
-[2022-10-03 08:02:09,166] 	logs_path: /home/hugosousa/Projects/tei2go/logs
-[2022-10-03 08:02:09,166] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-03 08:02:09,166] 	models_path: /tei2go/models
+[2022-10-03 08:02:09,166] 	resources_path: /tei2go/resources
+[2022-10-03 08:02:09,166] 	logs_path: /tei2go/logs
+[2022-10-03 08:02:09,166] 	data_path: /tei2go/data
 [2022-10-03 08:02:09,166] 	gpu: False
 [2022-10-03 08:02:09,166] Found preprocessed data.
 [2022-10-03 08:02:09,166] Starting spark session with GPU set to False.
@@ -2177,10 +2177,10 @@ Micro-average	 prec: 0.7613636, rec: 0.7023061, f1: 0.73064333
 [2022-10-03 08:19:01,740] 	batch_size: 4
 [2022-10-03 08:19:01,740] 	learning_rate: 0.05
 [2022-10-03 08:19:01,741] 	embeddings: glove_840B_300_xx
-[2022-10-03 08:19:01,741] 	models_path: /home/hugosousa/Projects/tei2go/models
-[2022-10-03 08:19:01,741] 	resources_path: /home/hugosousa/Projects/tei2go/resources
-[2022-10-03 08:19:01,741] 	logs_path: /home/hugosousa/Projects/tei2go/logs
-[2022-10-03 08:19:01,741] 	data_path: /home/hugosousa/Projects/tei2go/data
+[2022-10-03 08:19:01,741] 	models_path: /tei2go/models
+[2022-10-03 08:19:01,741] 	resources_path: /tei2go/resources
+[2022-10-03 08:19:01,741] 	logs_path: /tei2go/logs
+[2022-10-03 08:19:01,741] 	data_path: /tei2go/data
 [2022-10-03 08:19:01,741] 	gpu: False
 [2022-10-03 08:19:01,741] Found preprocessed data.
 [2022-10-03 08:19:01,741] Starting spark session with GPU set to False.
